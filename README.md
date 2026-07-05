@@ -64,3 +64,32 @@ Because we used interface-driven design, this MVP is fully prepared to evolve in
    - Implement scheduled jobs (Cron) to recalculate the score weekly. Trigger push notifications to bank admins if a business's health score drops rapidly (Early Warning System).
 4. **Blockchain Audit Trail**:
    - Store snapshots of the Financial Health Score on a ledger for immutable, tamper-proof auditing required by banking regulators.
+
+---
+
+## 🐳 Running Locally with Docker
+
+The easiest way to run the entire stack (Spring Boot Application + PostgreSQL Database) is using Docker Compose.
+
+### Prerequisites
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+### Steps to Run
+
+1. Open a terminal and navigate to the root directory of the project.
+2. Run the following command to build the image and start the containers:
+
+   ```bash
+   docker-compose up --build
+   ```
+
+3. Once the services are running, the application will be accessible at:
+   - **API Base URL**: `http://localhost:8080`
+   - **Swagger UI**: `http://localhost:8080/swagger-ui.html`
+
+4. To stop the application, run:
+
+   ```bash
+   docker-compose down
+   ```
