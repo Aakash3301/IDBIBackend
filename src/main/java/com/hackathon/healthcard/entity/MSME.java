@@ -34,6 +34,9 @@ public class MSME {
     @Column(nullable = false)
     private IndustryType industryType;
 
+    @Column(nullable = false, unique = true)
+    private String mobileNumber;
+
     @CreationTimestamp
     @Column(updatable = false)
     private LocalDateTime createdAt;

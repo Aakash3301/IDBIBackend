@@ -19,4 +19,7 @@ public class MsmeCreateRequest {
 
     @NotNull(message = "Industry Type is required")
     private IndustryType industryType;
+
+    @NotBlank(message = "Mobile number is required")
+    private String mobileNumber;
 }

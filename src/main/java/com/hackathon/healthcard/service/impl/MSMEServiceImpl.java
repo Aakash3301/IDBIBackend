@@ -26,6 +26,7 @@ public class MSMEServiceImpl implements MSMEService {
                 .pan(request.getPan())
                 .gstNumber(request.getGstNumber())
                 .industryType(request.getIndustryType())
+                .mobileNumber(request.getMobileNumber())
                 .build();
         return msmeRepository.save(msme);
     }
@@ -33,23 +34,24 @@ public class MSMEServiceImpl implements MSMEService {
     @Override
     public MSME getMsmeById(UUID id) {
         return msmeRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("MSME not found with ID: " + id));
+                .orElseThrow(() -> new com.hackathon.healthcard.exception.ResourceNotFoundException("MSME not found with ID: " + id));
+    }
+
+    @Override
+    public MSME login(String mobileNumber) {
+        return msmeRepository.findByMobileNumber(mobileNumber)
+                .orElseThrow(() -> new com.hackathon.healthcard.exception.UnauthorizedException("MSME not found with mobile number: " + mobileNumber));
     }
 
     @Override
     public HealthCardResponse getHealthCard(UUID id) {
         MSME msme = getMsmeById(id);
-        FinancialHealth health = financialHealthRepository.findByMsmeId(id)
-                .orElseThrow(() -> new RuntimeException("Health score not generated yet. Please run calculation first."));
+        return com.hackathon.healthcard.util.MockDataConstants.generateHealthCardMockData(msme);
+    }
 
-        return HealthCardResponse.builder()
-                .msmeId(msme.getId())
-                .businessName(msme.getBusinessName())
-                .healthScore(health.getHealthScore())
-                .riskCategory(health.getRiskCategory())
-                .loanEligibility(health.getLoanEligibility())
-                .recommendedLoanAmount(health.getRecommendedLoanAmount())
-                .lastCalculatedAt(health.getLastCalculatedAt())
-                .build();
+    @Override
+    public com.hackathon.healthcard.dto.RevenueAnalyticsResponse getRevenueAnalytics(UUID id) {
+        MSME msme = getMsmeById(id);
+        return com.hackathon.healthcard.util.MockDataConstants.generateRevenueAnalyticsMockData(msme);
     }
 }
