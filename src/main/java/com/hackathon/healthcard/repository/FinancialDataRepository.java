@@ -13,4 +13,6 @@ public interface FinancialDataRepository extends JpaRepository<FinancialData, UU
     // Find all financial data for a specific MSME, ordered by month chronologically
     // Spring Data JPA automatically implements this based on the method name
     List<FinancialData> findByMsmeIdOrderByRecordMonthAsc(UUID msmeId);
+    
+    java.util.Optional<FinancialData> findByMsmeIdAndRecordMonth(UUID msmeId, String recordMonth);
 }

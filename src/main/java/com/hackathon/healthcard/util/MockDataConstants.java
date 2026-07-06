@@ -64,6 +64,11 @@ public class MockDataConstants {
                         .build())
                 .quickActions(Arrays.asList(
                         DashboardResponseDto.QuickActionDto.builder()
+                                .id("ai_advisor")
+                                .icon("smart_toy")
+                                .title("AI\nAdvisor")
+                                .build(),
+                        DashboardResponseDto.QuickActionDto.builder()
                                 .id("health_card")
                                 .icon("health_metrics")
                                 .title("Financial\nHealth Card")
@@ -77,11 +82,6 @@ public class MockDataConstants {
                                 .id("alternate_data")
                                 .icon("hub")
                                 .title("Data\nSources")
-                                .build(),
-                        DashboardResponseDto.QuickActionDto.builder()
-                                .id("ai_advisor")
-                                .icon("smart_toy")
-                                .title("AI\nAdvisor")
                                 .build(),
                         DashboardResponseDto.QuickActionDto.builder()
                                 .id("loan_assessment")

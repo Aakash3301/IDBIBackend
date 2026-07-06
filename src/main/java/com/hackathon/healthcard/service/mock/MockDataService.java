@@ -7,4 +7,9 @@ import java.util.List;
 
 public interface MockDataService {
     List<FinancialData> generateMockDataForMsme(MSME msme);
+    void syncGstData(MSME msme);
+    void syncUpiData(MSME msme);
+    void syncEpfoData(MSME msme);
+    void syncBankStatementData(MSME msme);
+    void syncAaData(MSME msme);
 }

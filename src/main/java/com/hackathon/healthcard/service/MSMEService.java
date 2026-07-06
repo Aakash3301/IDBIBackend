@@ -12,4 +12,5 @@ public interface MSMEService {
     MSME login(String mobileNumber);
     HealthCardResponse getHealthCard(UUID id);
     com.hackathon.healthcard.dto.RevenueAnalyticsResponse getRevenueAnalytics(UUID id);
+    com.hackathon.healthcard.dto.LoanAssessmentResponse assessLoan(com.hackathon.healthcard.dto.LoanAssessmentRequest request);
 }
