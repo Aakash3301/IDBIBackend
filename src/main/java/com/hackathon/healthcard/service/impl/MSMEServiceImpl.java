@@ -179,6 +179,21 @@ public class MSMEServiceImpl implements MSMEService {
         int score = 0;
         java.util.List<String> insights = new java.util.ArrayList<>();
 
+        // 0. Fetch Financial Health Data First
+        FinancialHealth health = financialHealthRepository.findByMsmeId(request.getId())
+                .orElseThrow(() -> new BadRequestException("Health score not generated yet. Please wait for sync."));
+
+        insights.add("Alternative Data Health Score is " + health.getHealthScore() + "/1000 (" + health.getRiskCategory() + " Risk).");
+
+        if (health.getHealthScore() >= 800) {
+            score += 50;
+        } else if (health.getHealthScore() >= 600) {
+            score += 25;
+        } else {
+            score -= 50;
+            insights.add("Critical financial health severely restricts loan eligibility.");
+        }
+
         // 1. Evaluate Business Age
         String ageStr = request.getBusinessAge() != null ? request.getBusinessAge().toLowerCase() : "";
         if (ageStr.contains("year")) {
@@ -235,32 +250,40 @@ public class MSMEServiceImpl implements MSMEService {
         String aiInsightsText;
         int confidence;
 
-        if (score > 75) {
+        // Using health object from DB to influence strictness
+        boolean systemRejected = "REJECTED".equals(health.getLoanEligibility().name());
+
+        if (score > 100 && !systemRejected) {
             isEligible = true;
             recommendedLoan = request.getRequestedLoan(); // Full amount
             riskLevel = "Low";
             healthStatus = "Healthy";
             confidence = 92;
-            aiInsightsText = "Excellent credit profile. The business age and structured loan purpose make this a low-risk application.";
-        } else if (score >= 50) {
+            aiInsightsText = "Excellent credit profile. The business age, structured loan purpose, and high health score make this a low-risk application.";
+        } else if (score >= 50 && !systemRejected) {
             isEligible = true;
             try {
                 long reqAmount = Long.parseLong(request.getRequestedLoan());
-                recommendedLoan = String.valueOf((long)(reqAmount * 0.7)); // 70% amount
+                // Cap by Recommended Loan Amount from Engine
+                long engineRecommended = health.getRecommendedLoanAmount() != null ? health.getRecommendedLoanAmount().longValue() : 0L;
+                long approvedAmount = Math.min((long)(reqAmount * 0.7), engineRecommended);
+                recommendedLoan = String.valueOf(approvedAmount > 0 ? approvedAmount : engineRecommended);
             } catch (Exception e) {
                 recommendedLoan = "Partial Approval";
             }
             riskLevel = "Medium";
             healthStatus = "Stable";
             confidence = 75;
-            aiInsightsText = "Average credit profile. The application is eligible but recommended for a reduced loan amount to mitigate risk.";
+            aiInsightsText = "Average credit profile. The application is eligible but recommended for a reduced loan amount based on financial health constraints.";
         } else {
             isEligible = false;
             recommendedLoan = "0";
             riskLevel = "High";
             healthStatus = "Critical";
             confidence = 88;
-            aiInsightsText = "High-risk profile. The combination of short business history or unstructured loan purpose makes this ineligible.";
+            aiInsightsText = systemRejected 
+                ? "High-risk profile. The Alternative Data Engine rejected the loan due to low financial health score."
+                : "High-risk profile. The combination of short business history or unstructured loan purpose makes this ineligible.";
         }
 
         return LoanAssessmentResponse.builder()
