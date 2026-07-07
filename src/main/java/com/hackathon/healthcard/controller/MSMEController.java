@@ -1,8 +1,7 @@
 package com.hackathon.healthcard.controller;
 
+
 import com.hackathon.healthcard.dto.*;
-import com.hackathon.healthcard.entity.FinancialHealth;
-import com.hackathon.healthcard.entity.MSME;
 import com.hackathon.healthcard.service.MSMEService;
 import com.hackathon.healthcard.service.engine.FinancialHealthEngine;
 import com.hackathon.healthcard.service.mock.MockDataService;
@@ -29,9 +28,9 @@ public class MSMEController {
 
 
     @GetMapping("/{id}/health-card")
-    public ResponseEntity<APIResponse<com.hackathon.healthcard.dto.HealthCardResponse>> getHealthCard(@PathVariable UUID id) {
-        com.hackathon.healthcard.dto.HealthCardResponse healthCard = msmeService.getHealthCard(id);
-        APIResponse<com.hackathon.healthcard.dto.HealthCardResponse> response = new APIResponse<>(
+    public ResponseEntity<APIResponse<HealthCardResponse>> getHealthCard(@PathVariable UUID id) {
+        HealthCardResponse healthCard = msmeService.getHealthCard(id);
+        APIResponse<HealthCardResponse> response = new APIResponse<>(
                 HttpStatus.OK.value(),
                 "Health card retrieved successfully",
                 healthCard
@@ -40,9 +39,9 @@ public class MSMEController {
     }
 
     @GetMapping("/{id}/revenue-analytics")
-    public ResponseEntity<APIResponse<com.hackathon.healthcard.dto.RevenueAnalyticsResponse>> getRevenueAnalytics(@PathVariable UUID id) {
-        com.hackathon.healthcard.dto.RevenueAnalyticsResponse analytics = msmeService.getRevenueAnalytics(id);
-        APIResponse<com.hackathon.healthcard.dto.RevenueAnalyticsResponse> response = new APIResponse<>(
+    public ResponseEntity<APIResponse<RevenueAnalyticsResponse>> getRevenueAnalytics(@PathVariable UUID id) {
+        RevenueAnalyticsResponse analytics = msmeService.getRevenueAnalytics(id);
+        APIResponse<RevenueAnalyticsResponse> response = new APIResponse<>(
                 HttpStatus.OK.value(),
                 "API successfully",
                 analytics
@@ -51,9 +50,9 @@ public class MSMEController {
     }
 
     @PostMapping("/loanAssessment")
-    public ResponseEntity<APIResponse<com.hackathon.healthcard.dto.LoanAssessmentResponse>> assessLoan(@Valid @RequestBody com.hackathon.healthcard.dto.LoanAssessmentRequest request) {
-        com.hackathon.healthcard.dto.LoanAssessmentResponse assessment = msmeService.assessLoan(request);
-        APIResponse<com.hackathon.healthcard.dto.LoanAssessmentResponse> response = new APIResponse<>(
+    public ResponseEntity<APIResponse<LoanAssessmentResponse>> assessLoan(@Valid @RequestBody LoanAssessmentRequest request) {
+        LoanAssessmentResponse assessment = msmeService.assessLoan(request);
+        APIResponse<LoanAssessmentResponse> response = new APIResponse<>(
                 HttpStatus.OK.value(),
                 "Loan assessment completed successfully",
                 assessment

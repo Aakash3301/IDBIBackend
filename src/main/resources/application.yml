@@ -2,12 +2,10 @@ server:
   port: 8080
 
 spring:
+  profiles:
+    active: ${SPRING_PROFILE}
   application:
     name: healthcard
-  datasource:
-    url: jdbc:postgresql://localhost:5432/ibdihealthscoredb
-    username: postgres
-    password: 7539
   jpa:
     hibernate:
       ddl-auto: update

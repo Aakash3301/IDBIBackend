@@ -30,7 +30,7 @@ public class MSMEAuthController {
                 "MSME created successfully",
                 createdMsme
         );
-        return new ResponseEntity<>(response, HttpStatus.CREATED);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
     @PostMapping("/login")

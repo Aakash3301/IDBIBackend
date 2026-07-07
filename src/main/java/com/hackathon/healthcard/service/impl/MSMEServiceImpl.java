@@ -1,9 +1,12 @@
 package com.hackathon.healthcard.service.impl;
 
-import com.hackathon.healthcard.dto.HealthCardResponse;
-import com.hackathon.healthcard.dto.MsmeCreateRequest;
+import com.hackathon.healthcard.dto.*;
+import com.hackathon.healthcard.entity.FinancialData;
 import com.hackathon.healthcard.entity.FinancialHealth;
 import com.hackathon.healthcard.entity.MSME;
+import com.hackathon.healthcard.exception.BadRequestException;
+import com.hackathon.healthcard.exception.ResourceNotFoundException;
+import com.hackathon.healthcard.exception.UnauthorizedException;
 import com.hackathon.healthcard.repository.FinancialDataRepository;
 import com.hackathon.healthcard.repository.FinancialHealthRepository;
 import com.hackathon.healthcard.repository.MSMERepository;
@@ -18,8 +21,6 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
-import java.util.stream.Collectors;
-
 @Service
 @RequiredArgsConstructor
 public class MSMEServiceImpl implements MSMEService {
@@ -57,20 +58,20 @@ public class MSMEServiceImpl implements MSMEService {
     @Override
     public MSME getMsmeById(UUID id) {
         return msmeRepository.findById(id)
-                .orElseThrow(() -> new com.hackathon.healthcard.exception.ResourceNotFoundException("MSME not found with ID: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("MSME not found with ID: " + id));
     }
 
     @Override
     public MSME login(String mobileNumber) {
         return msmeRepository.findByMobileNumber(mobileNumber)
-                .orElseThrow(() -> new com.hackathon.healthcard.exception.UnauthorizedException("MSME not found with mobile number: " + mobileNumber));
+                .orElseThrow(() -> new UnauthorizedException("MSME not found with mobile number: " + mobileNumber));
     }
 
     @Override
     public HealthCardResponse getHealthCard(UUID id) {
         MSME msme = getMsmeById(id);
         FinancialHealth health = financialHealthRepository.findByMsmeId(id)
-                .orElseThrow(() -> new com.hackathon.healthcard.exception.BadRequestException("Health score not generated yet. Please wait for sync."));
+                .orElseThrow(() -> new BadRequestException("Health score not generated yet. Please wait for sync."));
                 
         String statusText;
         if (health.getHealthScore() >= 800) {
@@ -109,20 +110,20 @@ public class MSMEServiceImpl implements MSMEService {
     @Override
     public com.hackathon.healthcard.dto.RevenueAnalyticsResponse getRevenueAnalytics(UUID id) {
         MSME msme = getMsmeById(id);
-        List<com.hackathon.healthcard.entity.FinancialData> history = financialDataRepository.findByMsmeIdOrderByRecordMonthAsc(id);
+        List<FinancialData> history = financialDataRepository.findByMsmeIdOrderByRecordMonthAsc(id);
         
         if (history.isEmpty()) {
-            throw new com.hackathon.healthcard.exception.BadRequestException("No financial data found. Please run sync first.");
+            throw new BadRequestException("No financial data found. Please run sync first.");
         }
 
         BigDecimal totalRevenue = BigDecimal.ZERO;
         BigDecimal totalBankBalance = BigDecimal.ZERO;
         
-        List<com.hackathon.healthcard.dto.RevenueAnalyticsResponse.RevenueTrendDto> revenueTrend = new java.util.ArrayList<>();
-        List<com.hackathon.healthcard.dto.RevenueAnalyticsResponse.CashFlowDto> cashFlows = new java.util.ArrayList<>();
-        List<com.hackathon.healthcard.dto.RevenueAnalyticsResponse.GstTaxableValueDto> gstTaxableValues = new java.util.ArrayList<>();
+        List<RevenueAnalyticsResponse.RevenueTrendDto> revenueTrend = new java.util.ArrayList<>();
+        List<RevenueAnalyticsResponse.CashFlowDto> cashFlows = new java.util.ArrayList<>();
+        List<RevenueAnalyticsResponse.GstTaxableValueDto> gstTaxableValues = new java.util.ArrayList<>();
 
-        for (com.hackathon.healthcard.entity.FinancialData data : history) {
+        for (FinancialData data : history) {
             BigDecimal gstRev = data.getGstRevenue() != null ? data.getGstRevenue() : BigDecimal.ZERO;
             BigDecimal bankBal = data.getAvgBankBalance() != null ? data.getAvgBankBalance() : BigDecimal.ZERO;
             
@@ -132,18 +133,18 @@ public class MSMEServiceImpl implements MSMEService {
             // Extract month string
             String monthLabel = data.getRecordMonth().substring(data.getRecordMonth().length() - 2); 
             
-            revenueTrend.add(com.hackathon.healthcard.dto.RevenueAnalyticsResponse.RevenueTrendDto.builder()
+            revenueTrend.add(RevenueAnalyticsResponse.RevenueTrendDto.builder()
                     .month(monthLabel)
                     .value(gstRev.divide(BigDecimal.valueOf(100_000), 2, java.math.RoundingMode.HALF_UP).doubleValue())
                     .build());
                     
-            cashFlows.add(com.hackathon.healthcard.dto.RevenueAnalyticsResponse.CashFlowDto.builder()
+            cashFlows.add(RevenueAnalyticsResponse.CashFlowDto.builder()
                     .month(monthLabel)
                     .inflow(gstRev.divide(BigDecimal.valueOf(100_000), 2, java.math.RoundingMode.HALF_UP).doubleValue())
                     .outflow(gstRev.multiply(BigDecimal.valueOf(0.7)).divide(BigDecimal.valueOf(100_000), 2, java.math.RoundingMode.HALF_UP).doubleValue()) // Simulated outflow
                     .build());
                     
-            gstTaxableValues.add(com.hackathon.healthcard.dto.RevenueAnalyticsResponse.GstTaxableValueDto.builder()
+            gstTaxableValues.add(RevenueAnalyticsResponse.GstTaxableValueDto.builder()
                     .month(monthLabel)
                     .taxableValue("₹" + gstRev.divide(BigDecimal.valueOf(100_000), 2, java.math.RoundingMode.HALF_UP) + "L")
                     .progress(0.9)
@@ -153,7 +154,7 @@ public class MSMEServiceImpl implements MSMEService {
         String formattedTotalRev = "₹" + totalRevenue.divide(BigDecimal.valueOf(1_00_00_000), 2, java.math.RoundingMode.HALF_UP) + " Cr";
         String formattedAvgBal = "₹" + totalBankBalance.divide(BigDecimal.valueOf(history.size() * 100_000), 2, java.math.RoundingMode.HALF_UP) + " L";
 
-        return com.hackathon.healthcard.dto.RevenueAnalyticsResponse.builder()
+        return RevenueAnalyticsResponse.builder()
                 .aiInsights(Arrays.asList(
                         "Revenue mapped across " + history.size() + " months of synced data.",
                         "Average monthly bank balance maintained at " + formattedAvgBal + ".",
@@ -174,7 +175,7 @@ public class MSMEServiceImpl implements MSMEService {
     }
 
     @Override
-    public com.hackathon.healthcard.dto.LoanAssessmentResponse assessLoan(com.hackathon.healthcard.dto.LoanAssessmentRequest request) {
+    public LoanAssessmentResponse assessLoan(LoanAssessmentRequest request) {
         int score = 0;
         java.util.List<String> insights = new java.util.ArrayList<>();
 
@@ -262,7 +263,7 @@ public class MSMEServiceImpl implements MSMEService {
             aiInsightsText = "High-risk profile. The combination of short business history or unstructured loan purpose makes this ineligible.";
         }
 
-        return com.hackathon.healthcard.dto.LoanAssessmentResponse.builder()
+        return LoanAssessmentResponse.builder()
                 .isEligible(isEligible)
                 .recommendedLoan(recommendedLoan)
                 .riskLevel(riskLevel)
