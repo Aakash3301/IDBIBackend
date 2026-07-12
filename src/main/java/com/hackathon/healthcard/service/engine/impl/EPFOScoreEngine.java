@@ -1,37 +1,26 @@
 package com.hackathon.healthcard.service.engine.impl;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.hackathon.healthcard.dto.EPFODto;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
-import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
 @Service
 public class EPFOScoreEngine {
 
-    public String calculateScore(String msmeId) {
+    public String calculateScore(EPFODto epfoDto) {
+        if (epfoDto == null) {
+            return "{\"score\": 0, \"reason\": \"No EPFO data found for this MSME\"}";
+        }
+        
         try {
             ObjectMapper mapper = new ObjectMapper();
-            File jsonFile = Paths.get("src", "main", "java", "com", "hackathon", "healthcard", "util", "mockdata", "EPFO.json").toFile();
-            
-            if (!jsonFile.exists()) {
-                return "{\"error\": \"Mock data file EPFO.json not found\"}";
-            }
+            String msmeId = epfoDto.getMsmeId();
 
-            JsonNode rootNode = mapper.readTree(jsonFile);
-            String fileMsmeId = rootNode.path("msmeId").asText();
-
-            if (!msmeId.equals(fileMsmeId)) {
-                return "{\"msmeId\": \"" + msmeId + "\", \"score\": 0, \"reason\": \"No EPFO data found for this MSME\"}";
-            }
-
-            // Calculate score
-            JsonNode compliance = rootNode.path("complianceIndicators");
-            double onTimeFilingRate = compliance.path("onTimeFilingRate").asDouble(0);
-            int monthsFiled = compliance.path("monthsFiledLast6").asInt(0);
+            double onTimeFilingRate = epfoDto.getOnTimeFilingRate();
+            int monthsFiled = epfoDto.getMonthsFiledLast6();
 
             int score = 0;
             

@@ -48,6 +48,18 @@ public class FinancialHealth {
     @Column(columnDefinition = "TEXT")
     private String epfo;
 
+    @com.fasterxml.jackson.annotation.JsonRawValue
+    @Column(columnDefinition = "TEXT")
+    private String upi;
+
+    @com.fasterxml.jackson.annotation.JsonRawValue
+    @Column(columnDefinition = "TEXT")
+    private String bankStatement;
+
+    @com.fasterxml.jackson.annotation.JsonRawValue
+    @Column(columnDefinition = "TEXT")
+    private String gst;
+
     @UpdateTimestamp
     private LocalDateTime lastCalculatedAt;
 }

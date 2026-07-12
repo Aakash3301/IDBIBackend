@@ -1,49 +1,34 @@
 package com.hackathon.healthcard.service.engine.impl;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.hackathon.healthcard.dto.AADto;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
-import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
 @Service
 public class AAScoreEngine {
 
-    public String calculateScore(String msmeId) {
+    public String calculateScore(AADto aaDto) {
+        if (aaDto == null) {
+            return "{\"score\": 0, \"reason\": \"No AA data found for this MSME\"}";
+        }
+        
         try {
             ObjectMapper mapper = new ObjectMapper();
-            File jsonFile = Paths.get("src", "main", "java", "com", "hackathon", "healthcard", "util", "mockdata", "AA.json").toFile();
-            
-            if (!jsonFile.exists()) {
-                return "{\"error\": \"Mock data file AA.json not found\"}";
-            }
+            String msmeId = aaDto.getMsmeId();
 
-            JsonNode rootNode = mapper.readTree(jsonFile);
-            String fileMsmeId = rootNode.path("msmeId").asText();
-
-            if (!msmeId.equals(fileMsmeId)) {
-                return "{\"msmeId\": \"" + msmeId + "\", \"score\": 0, \"reason\": \"No AA data found for this MSME\"}";
-            }
-
-            // Calculate score
-            JsonNode summary = rootNode.path("Account").path("Summary");
-            double currentBalance = summary.path("currentBalance").asDouble(0);
-
-            JsonNode transactions = rootNode.path("Account").path("Transactions").path("Transaction");
+            double currentBalance = aaDto.getCurrentBalance();
             double totalCredit = 0;
             double totalDebit = 0;
 
-            if (transactions.isArray()) {
-                for (JsonNode txn : transactions) {
-                    String type = txn.path("type").asText();
-                    double amount = txn.path("amount").asDouble(0);
-                    if ("CREDIT".equalsIgnoreCase(type)) {
-                        totalCredit += amount;
-                    } else if ("DEBIT".equalsIgnoreCase(type)) {
-                        totalDebit += amount;
+            if (aaDto.getTransactions() != null) {
+                for (AADto.Transaction txn : aaDto.getTransactions()) {
+                    if ("CREDIT".equalsIgnoreCase(txn.getType())) {
+                        totalCredit += txn.getAmount();
+                    } else if ("DEBIT".equalsIgnoreCase(txn.getType())) {
+                        totalDebit += txn.getAmount();
                     }
                 }
             }
@@ -69,11 +54,12 @@ public class AAScoreEngine {
             }
 
             // Rule 3: Transaction volume (up to 30 points)
-            if (transactions.size() > 20) {
+            int txnCount = aaDto.getTransactions() != null ? aaDto.getTransactions().size() : 0;
+            if (txnCount > 20) {
                 score += 30;
-            } else if (transactions.size() > 10) {
+            } else if (txnCount > 10) {
                 score += 20;
-            } else if (transactions.size() > 0) {
+            } else if (txnCount > 0) {
                 score += 10;
             }
 

@@ -1,0 +1,60 @@
+{
+  "msmeId": "d8807a50-2f1c-43e8-a85a-d368635a6ef4",
+  "Account": {
+    "Summary": {
+      "currentBalance": 60000
+    },
+    "Transactions": {
+      "Transaction": [
+        {
+          "type": "CREDIT",
+          "amount": 20000
+        },
+        {
+          "type": "DEBIT",
+          "amount": 18000
+        },
+        {
+          "type": "CREDIT",
+          "amount": 20000
+        },
+        {
+          "type": "DEBIT",
+          "amount": 18000
+        },
+        {
+          "type": "CREDIT",
+          "amount": 20000
+        },
+        {
+          "type": "DEBIT",
+          "amount": 18000
+        },
+        {
+          "type": "CREDIT",
+          "amount": 20000
+        },
+        {
+          "type": "DEBIT",
+          "amount": 18000
+        },
+        {
+          "type": "CREDIT",
+          "amount": 20000
+        },
+        {
+          "type": "DEBIT",
+          "amount": 18000
+        },
+        {
+          "type": "CREDIT",
+          "amount": 20000
+        },
+        {
+          "type": "DEBIT",
+          "amount": 18000
+        }
+      ]
+    }
+  }
+}

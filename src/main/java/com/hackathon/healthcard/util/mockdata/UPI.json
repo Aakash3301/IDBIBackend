@@ -20,8 +20,7 @@
   "openingBalance": 42500.0,
   "closingBalance": 277305.95,
   "transactionCount": 192,
-  "debitAmoun" 600000,
-  //per day algorithm
+  "debitAmount": 600000,
   "transactions": [
     {
       "txnId": "UPI5006",

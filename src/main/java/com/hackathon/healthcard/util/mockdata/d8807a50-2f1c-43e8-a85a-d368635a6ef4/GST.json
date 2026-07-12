@@ -1,0 +1,54 @@
+{
+  "msmeId": "d8807a50-2f1c-43e8-a85a-d368635a6ef4",
+  "gstStatus": "Active",
+  "returnFilingHistory": [
+    {
+      "filingStatus": "Filed",
+      "delayDays": 5,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 5,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 5,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 5,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 5,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 5,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    }
+  ]
+}

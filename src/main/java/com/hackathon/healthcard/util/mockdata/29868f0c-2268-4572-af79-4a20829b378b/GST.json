@@ -1,0 +1,14 @@
+{
+  "msmeId": "29868f0c-2268-4572-af79-4a20829b378b",
+  "gstStatus": "Active",
+  "returnFilingHistory": [
+    {
+      "filingStatus": "Not Filed",
+      "delayDays": 30,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 0,
+      "taxPaidITC": 0,
+      "lateFee": 500
+    }
+  ]
+}

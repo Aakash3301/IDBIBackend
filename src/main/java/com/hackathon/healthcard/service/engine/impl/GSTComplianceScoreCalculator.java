@@ -1,4 +1,4 @@
-package com.hackathon.healthcard.util;
+package com.hackathon.healthcard.service.engine.impl;
 
 import com.hackathon.healthcard.dto.GSTComplianceInputResDto;
 import com.hackathon.healthcard.dto.GstScoreResult;

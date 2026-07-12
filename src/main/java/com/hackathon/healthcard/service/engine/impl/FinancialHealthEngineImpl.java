@@ -1,5 +1,8 @@
 package com.hackathon.healthcard.service.engine.impl;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.hackathon.healthcard.dto.GstScoreResult;
 import com.hackathon.healthcard.entity.FinancialData;
 import com.hackathon.healthcard.entity.FinancialHealth;
 import com.hackathon.healthcard.entity.MSME;
@@ -8,6 +11,7 @@ import com.hackathon.healthcard.entity.enums.RiskCategory;
 import com.hackathon.healthcard.repository.FinancialDataRepository;
 import com.hackathon.healthcard.repository.FinancialHealthRepository;
 import com.hackathon.healthcard.service.engine.FinancialHealthEngine;
+import com.hackathon.healthcard.service.reader.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,8 +26,20 @@ public class FinancialHealthEngineImpl implements FinancialHealthEngine {
 
     private final FinancialDataRepository financialDataRepository;
     private final FinancialHealthRepository financialHealthRepository;
+    
+    private final AAMockDataReader aaReader;
+    private final EPFOMockDataReader epfoReader;
+    private final UPIMockDataReader upiReader;
+    private final BankStatementMockDataReader bankStatementReader;
+    private final GSTMockDataReader gstReader;
+
     private final AAScoreEngine aaScoreEngine;
     private final EPFOScoreEngine epfoScoreEngine;
+    private final UPIScoreEngine upiScoreEngine;
+    private final BankStatementScoreEngine bankStatementScoreEngine;
+    private final GSTComplianceScoreCalculator gstComplianceScoreCalculator;
+
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
     @Transactional
@@ -31,42 +47,41 @@ public class FinancialHealthEngineImpl implements FinancialHealthEngine {
 
         List<FinancialData> history = financialDataRepository.findByMsmeIdOrderByRecordMonthAsc(msme.getId());
         
-        if (history.isEmpty()) {
-            throw new IllegalStateException("No financial data found for MSME. Please generate mock data first.");
+        BigDecimal avgMonthlyRevenue = BigDecimal.ZERO;
+        
+        if (!history.isEmpty()) {
+            BigDecimal totalRevenue = BigDecimal.ZERO;
+            for (FinancialData data : history) {
+                totalRevenue = totalRevenue.add(data.getGstRevenue());
+            }
+            avgMonthlyRevenue = totalRevenue.divide(BigDecimal.valueOf(history.size()), 2, RoundingMode.HALF_UP);
+        } else {
+            // fallback to some default if history not found
+            avgMonthlyRevenue = BigDecimal.valueOf(500000);
         }
 
-        BigDecimal totalRevenue = BigDecimal.ZERO;
-        int totalUpiVolume = 0;
-        BigDecimal totalBankBalance = BigDecimal.ZERO;
+        String msmeIdStr = msme.getId().toString();
 
-        for (FinancialData data : history) {
-            totalRevenue = totalRevenue.add(data.getGstRevenue());
-            totalUpiVolume += data.getUpiVolume();
-            totalBankBalance = totalBankBalance.add(data.getAvgBankBalance());
-        }
+        String aaResult = aaScoreEngine.calculateScore(aaReader.readData(msmeIdStr));
+        String epfoResult = epfoScoreEngine.calculateScore(epfoReader.readData(msmeIdStr));
+        String upiResult = upiScoreEngine.calculateScore(upiReader.readData(msmeIdStr));
+        String bankStatementResult = bankStatementScoreEngine.calculateScore(bankStatementReader.readData(msmeIdStr));
+        GstScoreResult gstResult = gstComplianceScoreCalculator.calculate(gstReader.readData(msmeIdStr));
 
-        BigDecimal avgMonthlyRevenue = totalRevenue.divide(BigDecimal.valueOf(history.size()), 2, RoundingMode.HALF_UP);
-        BigDecimal avgBankBalance = totalBankBalance.divide(BigDecimal.valueOf(history.size()), 2, RoundingMode.HALF_UP);
-        int avgUpiVolume = totalUpiVolume / history.size();
+        int aaScore = extractScore(aaResult);
+        int epfoScore = extractScore(epfoResult);
+        int upiScore = extractScore(upiResult);
+        int bankStatementScore = extractScore(bankStatementResult);
+        int gstScore = gstResult.score();
 
-        int score = 0;
-
-        if (avgMonthlyRevenue.compareTo(BigDecimal.valueOf(15_00_000)) > 0) score += 400;
-        else if (avgMonthlyRevenue.compareTo(BigDecimal.valueOf(5_00_000)) > 0) score += 300;
-        else score += 150;
-
-        if (avgUpiVolume > 1000) score += 300;
-        else if (avgUpiVolume > 500) score += 200;
-        else score += 100;
-
-        BigDecimal balanceRatio = avgBankBalance.divide(avgMonthlyRevenue, 2, RoundingMode.HALF_UP);
-        if (balanceRatio.compareTo(BigDecimal.valueOf(0.40)) > 0) score += 300;
-        else if (balanceRatio.compareTo(BigDecimal.valueOf(0.20)) > 0) score += 200;
-        else score += 100;
+        int averageScore = (aaScore + epfoScore + upiScore + bankStatementScore + gstScore) / 5;
+        
+        // Score is already 0-100 average
+        int score = averageScore;
 
         RiskCategory riskCategory;
-        if (score >= 800) riskCategory = RiskCategory.LOW;
-        else if (score >= 600) riskCategory = RiskCategory.MEDIUM;
+        if (score >= 80) riskCategory = RiskCategory.LOW;
+        else if (score >= 60) riskCategory = RiskCategory.MEDIUM;
         else riskCategory = RiskCategory.HIGH;
 
         LoanEligibility loanEligibility;
@@ -91,12 +106,37 @@ public class FinancialHealthEngineImpl implements FinancialHealthEngine {
         healthProfile.setLoanEligibility(loanEligibility);
         healthProfile.setRecommendedLoanAmount(recommendedLoanAmount);
         
-        // Populate AA and EPFO fields by invoking the respective engines
-        String msmeIdStr = msme.getId().toString();
-        healthProfile.setAa(aaScoreEngine.calculateScore(msmeIdStr));
-        healthProfile.setEpfo(epfoScoreEngine.calculateScore(msmeIdStr));
+        healthProfile.setAa(aaResult);
+        healthProfile.setEpfo(epfoResult);
+        healthProfile.setUpi(upiResult);
+        healthProfile.setBankStatement(bankStatementResult);
+        
+        try {
+            java.util.Map<String, Object> gstMap = new java.util.HashMap<>();
+            gstMap.put("engine", "GST");
+            gstMap.put("score", gstResult.score());
+            gstMap.put("grade", gstResult.grade());
+            gstMap.put("strengths", gstResult.strengths());
+            gstMap.put("weaknesses", gstResult.weaknesses());
+            gstMap.put("recommendations", gstResult.recommendations());
+            healthProfile.setGst(objectMapper.writeValueAsString(gstMap));
+        } catch (Exception e) {
+            healthProfile.setGst("{\"engine\":\"GST\",\"error\":\"Failed to serialize\"}");
+        }
 
         return financialHealthRepository.save(healthProfile);
     }
-}
 
+    private int extractScore(String jsonResult) {
+        try {
+            if (jsonResult == null || jsonResult.isEmpty()) return 0;
+            JsonNode node = objectMapper.readTree(jsonResult);
+            if (node.has("score")) {
+                return node.get("score").asInt(0);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+}

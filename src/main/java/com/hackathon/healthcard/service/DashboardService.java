@@ -57,7 +57,7 @@ public class DashboardService {
                 .hasNotifications(true)
                 .profileImageUrl("https://lh3.googleusercontent.com/aida-public/AB6AXuCMWFXvsH8kOw-IWGcffc9SK9FFI7TCyKcXm5PJG4PE5RsahKulmMNfnPVNo9Z7MN3WWAPXTYIl86I-rbAvn7mvMTo6CKSKNDtplykrEBKHdW2ffs-a6zykGEDs7dt2smnihTgJ8KGgQD7fQHb0gqJ5sCJQfLCC0qunTQg4X6UYNFVyK6BWDx9yv6ui271THAF-8vRL_iZiT71gnfeaxOBn8VDvK8klAwQRF0pjdTP7kjpi7MiamwFR")
                 .healthScore(DashboardResponseDto.HealthScoreDto.builder()
-                        .score((health.getHealthScore() * 100) / 1000) // Scale to 100 for frontend
+                        .score(health.getHealthScore()) // Already on 100 scale
                         .maxScore(100)
                         .statusText(health.getRiskCategory() == com.hackathon.healthcard.entity.enums.RiskCategory.LOW ? "Healthy Business" : 
                                     health.getRiskCategory() == com.hackathon.healthcard.entity.enums.RiskCategory.MEDIUM ? "Stable Business" : "Critical Profile")
@@ -96,7 +96,7 @@ public class DashboardService {
                                 .icon("rocket_launch")
                                 .title("Score Range")
                                 .value(String.valueOf(health.getHealthScore()))
-                                .trend("out of 1000")
+                                .trend("out of 100")
                                 .trendDirection("up")
                                 .colorType("primary")
                                 .build()
@@ -104,7 +104,7 @@ public class DashboardService {
                 .loanEligibility(DashboardResponseDto.LoanEligibilityDto.builder()
                         .status(health.getLoanEligibility().name())
                         .amountText(loanAmountText)
-                        .confidencePercentage(health.getHealthScore() > 800 ? 95 : (health.getHealthScore() > 600 ? 75 : 30))
+                        .confidencePercentage(health.getHealthScore() > 80 ? 95 : (health.getHealthScore() > 60 ? 75 : 30))
                         .build())
                 .quickActions(MockDataConstants.generateDashboardMockData(msme).getQuickActions()) // Re-using static quick actions config
                 .build();
