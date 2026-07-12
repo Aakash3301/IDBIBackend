@@ -22,10 +22,13 @@ public class FinancialHealthEngineImpl implements FinancialHealthEngine {
 
     private final FinancialDataRepository financialDataRepository;
     private final FinancialHealthRepository financialHealthRepository;
+    private final AAScoreEngine aaScoreEngine;
+    private final EPFOScoreEngine epfoScoreEngine;
 
     @Override
     @Transactional
     public FinancialHealth calculateHealthScore(MSME msme) {
+
         List<FinancialData> history = financialDataRepository.findByMsmeIdOrderByRecordMonthAsc(msme.getId());
         
         if (history.isEmpty()) {
@@ -87,7 +90,13 @@ public class FinancialHealthEngineImpl implements FinancialHealthEngine {
         healthProfile.setRiskCategory(riskCategory);
         healthProfile.setLoanEligibility(loanEligibility);
         healthProfile.setRecommendedLoanAmount(recommendedLoanAmount);
+        
+        // Populate AA and EPFO fields by invoking the respective engines
+        String msmeIdStr = msme.getId().toString();
+        healthProfile.setAa(aaScoreEngine.calculateScore(msmeIdStr));
+        healthProfile.setEpfo(epfoScoreEngine.calculateScore(msmeIdStr));
 
         return financialHealthRepository.save(healthProfile);
     }
 }
+
