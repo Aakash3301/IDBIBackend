@@ -7,6 +7,7 @@ import com.hackathon.healthcard.entity.FinancialHealth;
 import com.hackathon.healthcard.exception.BadRequestException;
 import com.hackathon.healthcard.repository.FinancialDataRepository;
 import com.hackathon.healthcard.repository.FinancialHealthRepository;
+import com.hackathon.healthcard.service.engine.impl.FinancialHealthEngineImpl;
 import com.hackathon.healthcard.util.MockDataConstants;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -23,6 +24,7 @@ public class DashboardService {
     private final MSMEService msmeService;
     private final FinancialDataRepository financialDataRepository;
     private final FinancialHealthRepository financialHealthRepository;
+    private  final FinancialHealthEngineImpl financialHealthEngine;
 
     public DashboardResponseDto getDashboardData(UUID msmeId) {
         MSME msme = msmeService.getMsmeById(msmeId);
@@ -31,6 +33,7 @@ public class DashboardService {
                 .orElseThrow(() -> new BadRequestException("Health score not generated yet. Please wait for sync."));
                 
         List<FinancialData> history = financialDataRepository.findByMsmeIdOrderByRecordMonthAsc(msmeId);
+        ;
         
         if (history.isEmpty()) {
             throw new BadRequestException("No financial data found. Please run sync first.");
@@ -57,7 +60,7 @@ public class DashboardService {
                 .hasNotifications(true)
                 .profileImageUrl("https://lh3.googleusercontent.com/aida-public/AB6AXuCMWFXvsH8kOw-IWGcffc9SK9FFI7TCyKcXm5PJG4PE5RsahKulmMNfnPVNo9Z7MN3WWAPXTYIl86I-rbAvn7mvMTo6CKSKNDtplykrEBKHdW2ffs-a6zykGEDs7dt2smnihTgJ8KGgQD7fQHb0gqJ5sCJQfLCC0qunTQg4X6UYNFVyK6BWDx9yv6ui271THAF-8vRL_iZiT71gnfeaxOBn8VDvK8klAwQRF0pjdTP7kjpi7MiamwFR")
                 .healthScore(DashboardResponseDto.HealthScoreDto.builder()
-                        .score(health.getHealthScore()) // Already on 100 scale
+                        .score( financialHealthEngine.calculateHealthScore(msme).getHealthScore())// Already on 100 scale
                         .maxScore(100)
                         .statusText(health.getRiskCategory() == com.hackathon.healthcard.entity.enums.RiskCategory.LOW ? "Healthy Business" : 
                                     health.getRiskCategory() == com.hackathon.healthcard.entity.enums.RiskCategory.MEDIUM ? "Stable Business" : "Critical Profile")
