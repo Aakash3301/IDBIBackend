@@ -40,6 +40,14 @@ public class FinancialHealth {
 
     private BigDecimal recommendedLoanAmount;
 
+    @com.fasterxml.jackson.annotation.JsonRawValue
+    @Column(columnDefinition = "TEXT")
+    private String aa;
+
+    @com.fasterxml.jackson.annotation.JsonRawValue
+    @Column(columnDefinition = "TEXT")
+    private String epfo;
+
     @UpdateTimestamp
     private LocalDateTime lastCalculatedAt;
 }
