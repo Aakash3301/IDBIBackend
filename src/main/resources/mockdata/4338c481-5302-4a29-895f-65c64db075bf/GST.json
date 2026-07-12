@@ -1,0 +1,102 @@
+{
+  "msmeId": "4338c481-5302-4a29-895f-65c64db075bf",
+  "gstStatus": "Active",
+  "returnFilingHistory": [
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    },
+    {
+      "filingStatus": "Filed",
+      "delayDays": 0,
+      "totalTaxLiability": 10000,
+      "taxPaidCash": 5000,
+      "taxPaidITC": 5000,
+      "lateFee": 0
+    }
+  ]
+}

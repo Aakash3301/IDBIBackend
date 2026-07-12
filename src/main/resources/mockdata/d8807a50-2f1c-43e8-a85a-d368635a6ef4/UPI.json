@@ -1,0 +1,48 @@
+{
+  "businessProfile": {
+    "msmeId": "d8807a50-2f1c-43e8-a85a-d368635a6ef4"
+  },
+  "transactionCount": 60,
+  "transactions": [
+    {
+      "type": "CREDIT",
+      "amount": 15000
+    },
+    {
+      "type": "DEBIT",
+      "amount": 10000
+    },
+    {
+      "type": "CREDIT",
+      "amount": 15000
+    },
+    {
+      "type": "DEBIT",
+      "amount": 10000
+    },
+    {
+      "type": "CREDIT",
+      "amount": 15000
+    },
+    {
+      "type": "DEBIT",
+      "amount": 10000
+    },
+    {
+      "type": "CREDIT",
+      "amount": 15000
+    },
+    {
+      "type": "DEBIT",
+      "amount": 10000
+    },
+    {
+      "type": "CREDIT",
+      "amount": 15000
+    },
+    {
+      "type": "DEBIT",
+      "amount": 10000
+    }
+  ]
+}

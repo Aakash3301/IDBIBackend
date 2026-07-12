@@ -5,8 +5,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hackathon.healthcard.dto.BankStatementDto;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
-import java.nio.file.Paths;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+import java.io.InputStream;
 
 @Service
 public class BankStatementMockDataReader implements MockDataReader<BankStatementDto> {
@@ -14,16 +15,16 @@ public class BankStatementMockDataReader implements MockDataReader<BankStatement
     public BankStatementDto readData(String msmeId) {
         try {
             ObjectMapper mapper = new ObjectMapper();
-            File jsonFile = Paths.get("src", "main", "java", "com", "hackathon", "healthcard", "util", "mockdata", msmeId, "BANKSTATEMENT.json").toFile();
-            if (!jsonFile.exists()) {
-                jsonFile = Paths.get("src", "main", "java", "com", "hackathon", "healthcard", "util", "mockdata", "BANKSTATEMENT.json").toFile();
+            Resource resource = new ClassPathResource("mockdata/" + msmeId + "/BANKSTATEMENT.json");
+            if (!resource.exists()) {
+                resource = new ClassPathResource("mockdata/BANKSTATEMENT.json");
             }
-            if (!jsonFile.exists()) return null;
+            if (!resource.exists()) return null;
 
-            JsonNode rootNode = mapper.readTree(jsonFile);
-            String fileMsmeId = rootNode.path("msmeId").asText();
-            if (!msmeId.equals(fileMsmeId)) return null;
-
+            JsonNode rootNode;
+            try (InputStream inputStream = resource.getInputStream()) {
+                rootNode = mapper.readTree(inputStream);
+            }
             BankStatementDto dto = new BankStatementDto();
             dto.setMsmeId(msmeId);
             dto.setClosingBalance(rootNode.path("closingBalance").asDouble(0));

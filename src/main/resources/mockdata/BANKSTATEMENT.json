@@ -1,0 +1,1749 @@
+{
+  "bankName": "HDFC Bank",
+  "msmeId": "3a622814-ac59-4bdc-81ff-ef53cc81087d",
+  "branch": "Nashik College Road Branch",
+  "ifsc": "HDFC0001234",
+  "accountHolderName": "Krishna Hardware & Electricals",
+  "accountNumber": "XXXXXXXX7231",
+  "accountType": "Current Account",
+  "statementPeriod": {
+    "from": "2026-06-01",
+    "to": "2026-06-30"
+  },
+  "openingBalance": 42500.0,
+  "closingBalance": 277305.95,
+  "totalWithdrawals": 341745.66,
+  "totalDeposits": 576551.61,
+  "transactionCount": 192,
+  "transactions": [
+    {
+      "txnDate": "2026-06-01",
+      "valueDate": "2026-06-01",
+      "chqRefNo": "REF700001",
+      "narration": "Monthly salary - Ganesh Wagh (Shop Helper) - UPI",
+      "withdrawalAmt": 12000.0,
+      "depositAmt": 0.0,
+      "closingBalance": 319705.95
+    },
+    {
+      "txnDate": "2026-06-01",
+      "valueDate": "2026-06-01",
+      "chqRefNo": "REF700002",
+      "narration": "Payment received - sale invoice - City Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4241.43,
+      "closingBalance": 46741.43
+    },
+    {
+      "txnDate": "2026-06-01",
+      "valueDate": "2026-06-01",
+      "chqRefNo": "REF700003",
+      "narration": "Payment received - sale invoice - Suresh Traders - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 414.7,
+      "closingBalance": 47156.13
+    },
+    {
+      "txnDate": "2026-06-01",
+      "valueDate": "2026-06-01",
+      "chqRefNo": "REF700004",
+      "narration": "Payment received - sale invoice - Rahul Kirana - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6821.84,
+      "closingBalance": 65328.22
+    },
+    {
+      "txnDate": "2026-06-01",
+      "valueDate": "2026-06-01",
+      "chqRefNo": "REF700005",
+      "narration": "Payment received - sale invoice - Balaji Fittings - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1330.43,
+      "closingBalance": 53602.75
+    },
+    {
+      "txnDate": "2026-06-01",
+      "valueDate": "2026-06-01",
+      "chqRefNo": "REF700006",
+      "narration": "Payment for stock purchase - Polycab Wires Distributor - UPI",
+      "withdrawalAmt": 18928.18,
+      "depositAmt": 0.0,
+      "closingBalance": 46400.04
+    },
+    {
+      "txnDate": "2026-06-01",
+      "valueDate": "2026-06-01",
+      "chqRefNo": "REF700007",
+      "narration": "Payment received - sale invoice - Suresh Traders - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5116.19,
+      "closingBalance": 52272.32
+    },
+    {
+      "txnDate": "2026-06-01",
+      "valueDate": "2026-06-01",
+      "chqRefNo": "REF700008",
+      "narration": "Payment received - sale invoice - Rahul Kirana - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4903.63,
+      "closingBalance": 58506.38
+    },
+    {
+      "txnDate": "2026-06-01",
+      "valueDate": "2026-06-01",
+      "chqRefNo": "REF700009",
+      "narration": "Owner drawings / cash withdrawal - Self - CASH-WITHDRAWAL",
+      "withdrawalAmt": 4383.14,
+      "depositAmt": 0.0,
+      "closingBalance": 42016.9
+    },
+    {
+      "txnDate": "2026-06-02",
+      "valueDate": "2026-06-02",
+      "chqRefNo": "REF700010",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1530.58,
+      "closingBalance": 45588.18
+    },
+    {
+      "txnDate": "2026-06-02",
+      "valueDate": "2026-06-02",
+      "chqRefNo": "REF700011",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 696.67,
+      "closingBalance": 54107.7
+    },
+    {
+      "txnDate": "2026-06-02",
+      "valueDate": "2026-06-02",
+      "chqRefNo": "REF700012",
+      "narration": "Payment received - sale invoice - Balaji Fittings - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7822.85,
+      "closingBalance": 53411.03
+    },
+    {
+      "txnDate": "2026-06-02",
+      "valueDate": "2026-06-02",
+      "chqRefNo": "REF700013",
+      "narration": "Payment for stock purchase - Local Hardware Wholesaler - UPI",
+      "withdrawalAmt": 19169.08,
+      "depositAmt": 0.0,
+      "closingBalance": 41828.35
+    },
+    {
+      "txnDate": "2026-06-02",
+      "valueDate": "2026-06-02",
+      "chqRefNo": "REF700014",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6889.73,
+      "closingBalance": 60997.43
+    },
+    {
+      "txnDate": "2026-06-02",
+      "valueDate": "2026-06-02",
+      "chqRefNo": "REF700015",
+      "narration": "Payment received - sale invoice - Balaji Fittings - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2040.7,
+      "closingBalance": 44057.6
+    },
+    {
+      "txnDate": "2026-06-03",
+      "valueDate": "2026-06-03",
+      "chqRefNo": "REF700016",
+      "narration": "Payment received - sale invoice - Vijay Hardware - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 615.3,
+      "closingBalance": 48161.39
+    },
+    {
+      "txnDate": "2026-06-03",
+      "valueDate": "2026-06-03",
+      "chqRefNo": "REF700017",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6424.81,
+      "closingBalance": 54586.2
+    },
+    {
+      "txnDate": "2026-06-03",
+      "valueDate": "2026-06-03",
+      "chqRefNo": "REF700018",
+      "narration": "Payment received - sale invoice - Mahesh Plumbing Works - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5437.16,
+      "closingBalance": 47265.51
+    },
+    {
+      "txnDate": "2026-06-03",
+      "valueDate": "2026-06-03",
+      "chqRefNo": "REF700019",
+      "narration": "Payment for stock purchase - Local Hardware Wholesaler - UPI",
+      "withdrawalAmt": 13484.27,
+      "depositAmt": 0.0,
+      "closingBalance": 41101.93
+    },
+    {
+      "txnDate": "2026-06-03",
+      "valueDate": "2026-06-03",
+      "chqRefNo": "REF700020",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 280.58,
+      "closingBalance": 47546.09
+    },
+    {
+      "txnDate": "2026-06-04",
+      "valueDate": "2026-06-04",
+      "chqRefNo": "REF700021",
+      "narration": "Payment received - sale invoice - Vijay Hardware - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 594.12,
+      "closingBalance": 47979.27
+    },
+    {
+      "txnDate": "2026-06-04",
+      "valueDate": "2026-06-04",
+      "chqRefNo": "REF700022",
+      "narration": "Payment received - sale invoice - Rahul Kirana - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4511.9,
+      "closingBalance": 52491.17
+    },
+    {
+      "txnDate": "2026-06-04",
+      "valueDate": "2026-06-04",
+      "chqRefNo": "REF700023",
+      "narration": "Payment received - sale invoice - Rahul Kirana - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1396.88,
+      "closingBalance": 53888.05
+    },
+    {
+      "txnDate": "2026-06-04",
+      "valueDate": "2026-06-04",
+      "chqRefNo": "REF700024",
+      "narration": "Payment received - sale invoice - Patel Construction - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2527.62,
+      "closingBalance": 56415.67
+    },
+    {
+      "txnDate": "2026-06-04",
+      "valueDate": "2026-06-04",
+      "chqRefNo": "REF700025",
+      "narration": "Payment received - sale invoice - City Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1486.13,
+      "closingBalance": 57901.8
+    },
+    {
+      "txnDate": "2026-06-04",
+      "valueDate": "2026-06-04",
+      "chqRefNo": "REF700026",
+      "narration": "Payment received - sale invoice - Rahul Kirana - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 3000.17,
+      "closingBalance": 61125.07
+    },
+    {
+      "txnDate": "2026-06-04",
+      "valueDate": "2026-06-04",
+      "chqRefNo": "REF700027",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6283.22,
+      "closingBalance": 47385.15
+    },
+    {
+      "txnDate": "2026-06-04",
+      "valueDate": "2026-06-04",
+      "chqRefNo": "REF700028",
+      "narration": "Payment received - sale invoice - City Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 223.1,
+      "closingBalance": 58124.9
+    },
+    {
+      "txnDate": "2026-06-05",
+      "valueDate": "2026-06-05",
+      "chqRefNo": "REF700029",
+      "narration": "Shop rent - June - Nashik Commercial Properties - AUTO-DEBIT",
+      "withdrawalAmt": 15000.0,
+      "depositAmt": 0.0,
+      "closingBalance": 304705.95
+    },
+    {
+      "txnDate": "2026-06-05",
+      "valueDate": "2026-06-05",
+      "chqRefNo": "REF700030",
+      "narration": "Payment received - sale invoice - Priya Traders - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7215.67,
+      "closingBalance": 80586.07
+    },
+    {
+      "txnDate": "2026-06-05",
+      "valueDate": "2026-06-05",
+      "chqRefNo": "REF700031",
+      "narration": "Payment received - sale invoice - Balaji Fittings - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 601.39,
+      "closingBalance": 86080.07
+    },
+    {
+      "txnDate": "2026-06-05",
+      "valueDate": "2026-06-05",
+      "chqRefNo": "REF700032",
+      "narration": "Payment for stock purchase - Polycab Wires Distributor - UPI",
+      "withdrawalAmt": 6199.4,
+      "depositAmt": 0.0,
+      "closingBalance": 84611.54
+    },
+    {
+      "txnDate": "2026-06-05",
+      "valueDate": "2026-06-05",
+      "chqRefNo": "REF700033",
+      "narration": "Payment received - sale invoice - Mahesh Plumbing Works - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1486.04,
+      "closingBalance": 73370.4
+    },
+    {
+      "txnDate": "2026-06-05",
+      "valueDate": "2026-06-05",
+      "chqRefNo": "REF700034",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7182.21,
+      "closingBalance": 68307.28
+    },
+    {
+      "txnDate": "2026-06-05",
+      "valueDate": "2026-06-05",
+      "chqRefNo": "REF700035",
+      "narration": "Payment received - sale invoice - Mahesh Plumbing Works - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4892.61,
+      "closingBalance": 85478.68
+    },
+    {
+      "txnDate": "2026-06-05",
+      "valueDate": "2026-06-05",
+      "chqRefNo": "REF700036",
+      "narration": "Payment received - sale invoice - Vijay Hardware - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4730.87,
+      "closingBalance": 90810.94
+    },
+    {
+      "txnDate": "2026-06-05",
+      "valueDate": "2026-06-05",
+      "chqRefNo": "REF700037",
+      "narration": "Payment received - sale invoice - Rahul Kirana - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1742.21,
+      "closingBalance": 71884.36
+    },
+    {
+      "txnDate": "2026-06-05",
+      "valueDate": "2026-06-05",
+      "chqRefNo": "REF700038",
+      "narration": "Owner drawings / cash withdrawal - Self - CASH-WITHDRAWAL",
+      "withdrawalAmt": 3301.43,
+      "depositAmt": 0.0,
+      "closingBalance": 81310.11
+    },
+    {
+      "txnDate": "2026-06-05",
+      "valueDate": "2026-06-05",
+      "chqRefNo": "REF700039",
+      "narration": "Payment received - sale invoice - Patel Construction - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1834.87,
+      "closingBalance": 70142.15
+    },
+    {
+      "txnDate": "2026-06-06",
+      "valueDate": "2026-06-06",
+      "chqRefNo": "REF700040",
+      "narration": "Payment received - sale invoice - Vijay Hardware - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7882.53,
+      "closingBalance": 101391.22
+    },
+    {
+      "txnDate": "2026-06-06",
+      "valueDate": "2026-06-06",
+      "chqRefNo": "REF700041",
+      "narration": "Payment received - sale invoice - City Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6103.14,
+      "closingBalance": 93508.69
+    },
+    {
+      "txnDate": "2026-06-06",
+      "valueDate": "2026-06-06",
+      "chqRefNo": "REF700042",
+      "narration": "Payment received - sale invoice - Anita Enterprises - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 341.56,
+      "closingBalance": 101732.78
+    },
+    {
+      "txnDate": "2026-06-06",
+      "valueDate": "2026-06-06",
+      "chqRefNo": "REF700043",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4304.52,
+      "closingBalance": 87405.55
+    },
+    {
+      "txnDate": "2026-06-06",
+      "valueDate": "2026-06-06",
+      "chqRefNo": "REF700044",
+      "narration": "Payment received - sale invoice - Patel Construction - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1790.92,
+      "closingBalance": 83101.03
+    },
+    {
+      "txnDate": "2026-06-07",
+      "valueDate": "2026-06-07",
+      "chqRefNo": "REF700045",
+      "narration": "Business loan EMI - Bajaj Finserv - BL EMI - AUTO-DEBIT",
+      "withdrawalAmt": 9800.0,
+      "depositAmt": 0.0,
+      "closingBalance": 294905.95
+    },
+    {
+      "txnDate": "2026-06-07",
+      "valueDate": "2026-06-07",
+      "chqRefNo": "REF700046",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7861.31,
+      "closingBalance": 109594.09
+    },
+    {
+      "txnDate": "2026-06-07",
+      "valueDate": "2026-06-07",
+      "chqRefNo": "REF700047",
+      "narration": "Payment for stock purchase - Local Hardware Wholesaler - UPI",
+      "withdrawalAmt": 14575.39,
+      "depositAmt": 0.0,
+      "closingBalance": 95018.7
+    },
+    {
+      "txnDate": "2026-06-08",
+      "valueDate": "2026-06-08",
+      "chqRefNo": "REF700048",
+      "narration": "Payment received - sale invoice - Rahul Kirana - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1767.25,
+      "closingBalance": 99252.52
+    },
+    {
+      "txnDate": "2026-06-08",
+      "valueDate": "2026-06-08",
+      "chqRefNo": "REF700049",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 3001.68,
+      "closingBalance": 106619.8
+    },
+    {
+      "txnDate": "2026-06-08",
+      "valueDate": "2026-06-08",
+      "chqRefNo": "REF700050",
+      "narration": "Payment received - sale invoice - City Electricals - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6436.3,
+      "closingBalance": 113056.1
+    },
+    {
+      "txnDate": "2026-06-08",
+      "valueDate": "2026-06-08",
+      "chqRefNo": "REF700051",
+      "narration": "Payment received - sale invoice - Vijay Hardware - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4365.6,
+      "closingBalance": 103618.12
+    },
+    {
+      "txnDate": "2026-06-08",
+      "valueDate": "2026-06-08",
+      "chqRefNo": "REF700052",
+      "narration": "Payment for stock purchase - Havells India Ltd (Distributor) - UPI",
+      "withdrawalAmt": 11897.87,
+      "depositAmt": 0.0,
+      "closingBalance": 101158.23
+    },
+    {
+      "txnDate": "2026-06-08",
+      "valueDate": "2026-06-08",
+      "chqRefNo": "REF700053",
+      "narration": "Payment received - sale invoice - City Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2466.57,
+      "closingBalance": 97485.27
+    },
+    {
+      "txnDate": "2026-06-09",
+      "valueDate": "2026-06-09",
+      "chqRefNo": "REF700054",
+      "narration": "Payment received - sale invoice - Patel Construction - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1713.36,
+      "closingBalance": 111344.4
+    },
+    {
+      "txnDate": "2026-06-09",
+      "valueDate": "2026-06-09",
+      "chqRefNo": "REF700055",
+      "narration": "Payment received - sale invoice - Patel Construction - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1160.77,
+      "closingBalance": 102538.48
+    },
+    {
+      "txnDate": "2026-06-09",
+      "valueDate": "2026-06-09",
+      "chqRefNo": "REF700056",
+      "narration": "Payment for stock purchase - Local Hardware Wholesaler - UPI",
+      "withdrawalAmt": 18815.97,
+      "depositAmt": 0.0,
+      "closingBalance": 92812.17
+    },
+    {
+      "txnDate": "2026-06-09",
+      "valueDate": "2026-06-09",
+      "chqRefNo": "REF700057",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6852.97,
+      "closingBalance": 109631.04
+    },
+    {
+      "txnDate": "2026-06-09",
+      "valueDate": "2026-06-09",
+      "chqRefNo": "REF700058",
+      "narration": "Payment received - sale invoice - City Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 219.48,
+      "closingBalance": 101377.71
+    },
+    {
+      "txnDate": "2026-06-09",
+      "valueDate": "2026-06-09",
+      "chqRefNo": "REF700059",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 239.59,
+      "closingBalance": 102778.07
+    },
+    {
+      "txnDate": "2026-06-09",
+      "valueDate": "2026-06-09",
+      "chqRefNo": "REF700060",
+      "narration": "Payment received - sale invoice - City Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 283.74,
+      "closingBalance": 111628.14
+    },
+    {
+      "txnDate": "2026-06-09",
+      "valueDate": "2026-06-09",
+      "chqRefNo": "REF700061",
+      "narration": "Owner drawings / cash withdrawal - Self - CASH-WITHDRAWAL",
+      "withdrawalAmt": 4128.61,
+      "depositAmt": 0.0,
+      "closingBalance": 88683.56
+    },
+    {
+      "txnDate": "2026-06-10",
+      "valueDate": "2026-06-10",
+      "chqRefNo": "BOUNCED-REF700062",
+      "narration": "Electricity bill payment - MSEB Electricity Board - AUTO-DEBIT [RETURNED]",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 0.0,
+      "closingBalance": 294905.95
+    },
+    {
+      "txnDate": "2026-06-10",
+      "valueDate": "2026-06-10",
+      "chqRefNo": "REF700063",
+      "narration": "Payment received - sale invoice - Anita Enterprises - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2742.94,
+      "closingBalance": 94005.5
+    },
+    {
+      "txnDate": "2026-06-10",
+      "valueDate": "2026-06-10",
+      "chqRefNo": "REF700064",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 645.69,
+      "closingBalance": 91262.56
+    },
+    {
+      "txnDate": "2026-06-10",
+      "valueDate": "2026-06-10",
+      "chqRefNo": "REF700065",
+      "narration": "Payment for stock purchase - Polycab Wires Distributor - UPI",
+      "withdrawalAmt": 9213.93,
+      "depositAmt": 0.0,
+      "closingBalance": 92074.12
+    },
+    {
+      "txnDate": "2026-06-10",
+      "valueDate": "2026-06-10",
+      "chqRefNo": "REF700066",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7282.55,
+      "closingBalance": 101288.05
+    },
+    {
+      "txnDate": "2026-06-10",
+      "valueDate": "2026-06-10",
+      "chqRefNo": "REF700067",
+      "narration": "Payment received - sale invoice - Patel Construction - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1933.31,
+      "closingBalance": 90616.87
+    },
+    {
+      "txnDate": "2026-06-11",
+      "valueDate": "2026-06-11",
+      "chqRefNo": "REF700068",
+      "narration": "Payment received - sale invoice - Rahul Kirana - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2486.47,
+      "closingBalance": 103956.37
+    },
+    {
+      "txnDate": "2026-06-11",
+      "valueDate": "2026-06-11",
+      "chqRefNo": "REF700069",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1189.44,
+      "closingBalance": 93263.56
+    },
+    {
+      "txnDate": "2026-06-11",
+      "valueDate": "2026-06-11",
+      "chqRefNo": "REF700070",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5394.64,
+      "closingBalance": 112082.82
+    },
+    {
+      "txnDate": "2026-06-11",
+      "valueDate": "2026-06-11",
+      "chqRefNo": "REF700071",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2731.81,
+      "closingBalance": 106688.18
+    },
+    {
+      "txnDate": "2026-06-11",
+      "valueDate": "2026-06-11",
+      "chqRefNo": "REF700072",
+      "narration": "Payment received - sale invoice - Patel Construction - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 464.17,
+      "closingBalance": 112546.99
+    },
+    {
+      "txnDate": "2026-06-11",
+      "valueDate": "2026-06-11",
+      "chqRefNo": "REF700073",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 8206.34,
+      "closingBalance": 101469.9
+    },
+    {
+      "txnDate": "2026-06-11",
+      "valueDate": "2026-06-11",
+      "chqRefNo": "REF700074",
+      "narration": "Payment received - sale invoice - Rahul Kirana - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 829.67,
+      "closingBalance": 113376.66
+    },
+    {
+      "txnDate": "2026-06-12",
+      "valueDate": "2026-06-12",
+      "chqRefNo": "REF700075",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2688.04,
+      "closingBalance": 135362.02
+    },
+    {
+      "txnDate": "2026-06-12",
+      "valueDate": "2026-06-12",
+      "chqRefNo": "REF700076",
+      "narration": "Payment received - sale invoice - Patel Construction - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4459.71,
+      "closingBalance": 139821.73
+    },
+    {
+      "txnDate": "2026-06-12",
+      "valueDate": "2026-06-12",
+      "chqRefNo": "REF700077",
+      "narration": "Payment received - sale invoice - Mahesh Plumbing Works - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1009.22,
+      "closingBalance": 140830.95
+    },
+    {
+      "txnDate": "2026-06-12",
+      "valueDate": "2026-06-12",
+      "chqRefNo": "REF700078",
+      "narration": "Payment for stock purchase - Havells India Ltd (Distributor) - UPI",
+      "withdrawalAmt": 18746.53,
+      "depositAmt": 0.0,
+      "closingBalance": 122084.42
+    },
+    {
+      "txnDate": "2026-06-12",
+      "valueDate": "2026-06-12",
+      "chqRefNo": "REF700079",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2983.94,
+      "closingBalance": 132673.98
+    },
+    {
+      "txnDate": "2026-06-12",
+      "valueDate": "2026-06-12",
+      "chqRefNo": "REF700080",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 8549.44,
+      "closingBalance": 122275.56
+    },
+    {
+      "txnDate": "2026-06-12",
+      "valueDate": "2026-06-12",
+      "chqRefNo": "REF700081",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7414.48,
+      "closingBalance": 129690.04
+    },
+    {
+      "txnDate": "2026-06-12",
+      "valueDate": "2026-06-12",
+      "chqRefNo": "REF700082",
+      "narration": "Payment received - sale invoice - Priya Traders - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 349.46,
+      "closingBalance": 113726.12
+    },
+    {
+      "txnDate": "2026-06-13",
+      "valueDate": "2026-06-13",
+      "chqRefNo": "REF700083",
+      "narration": "Payment for stock purchase - Anchor Electricals Supplier - UPI",
+      "withdrawalAmt": 17763.23,
+      "depositAmt": 0.0,
+      "closingBalance": 125736.25
+    },
+    {
+      "txnDate": "2026-06-13",
+      "valueDate": "2026-06-13",
+      "chqRefNo": "REF700084",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6027.1,
+      "closingBalance": 143499.48
+    },
+    {
+      "txnDate": "2026-06-13",
+      "valueDate": "2026-06-13",
+      "chqRefNo": "REF700085",
+      "narration": "Payment received - sale invoice - Vijay Hardware - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1168.11,
+      "closingBalance": 129826.74
+    },
+    {
+      "txnDate": "2026-06-13",
+      "valueDate": "2026-06-13",
+      "chqRefNo": "REF700086",
+      "narration": "Payment received - sale invoice - City Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 399.25,
+      "closingBalance": 128658.63
+    },
+    {
+      "txnDate": "2026-06-13",
+      "valueDate": "2026-06-13",
+      "chqRefNo": "REF700087",
+      "narration": "Payment received - sale invoice - Balaji Fittings - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1755.21,
+      "closingBalance": 123839.63
+    },
+    {
+      "txnDate": "2026-06-13",
+      "valueDate": "2026-06-13",
+      "chqRefNo": "REF700088",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1847.87,
+      "closingBalance": 137472.38
+    },
+    {
+      "txnDate": "2026-06-13",
+      "valueDate": "2026-06-13",
+      "chqRefNo": "REF700089",
+      "narration": "Payment received - sale invoice - City Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 3184.84,
+      "closingBalance": 128259.38
+    },
+    {
+      "txnDate": "2026-06-13",
+      "valueDate": "2026-06-13",
+      "chqRefNo": "REF700090",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1234.91,
+      "closingBalance": 125074.54
+    },
+    {
+      "txnDate": "2026-06-13",
+      "valueDate": "2026-06-13",
+      "chqRefNo": "REF700091",
+      "narration": "Owner drawings / cash withdrawal - Self - CASH-WITHDRAWAL",
+      "withdrawalAmt": 4517.33,
+      "depositAmt": 0.0,
+      "closingBalance": 121218.92
+    },
+    {
+      "txnDate": "2026-06-13",
+      "valueDate": "2026-06-13",
+      "chqRefNo": "REF700092",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5797.77,
+      "closingBalance": 135624.51
+    },
+    {
+      "txnDate": "2026-06-14",
+      "valueDate": "2026-06-14",
+      "chqRefNo": "REF700093",
+      "narration": "Electricity bill payment (retry) - MSEB Electricity Board - AUTO-DEBIT",
+      "withdrawalAmt": 6200.0,
+      "depositAmt": 0.0,
+      "closingBalance": 288705.95
+    },
+    {
+      "txnDate": "2026-06-14",
+      "valueDate": "2026-06-14",
+      "chqRefNo": "REF700094",
+      "narration": "Payment for stock purchase - Finolex Cables Agency - UPI",
+      "withdrawalAmt": 19983.1,
+      "depositAmt": 0.0,
+      "closingBalance": 105294.43
+    },
+    {
+      "txnDate": "2026-06-14",
+      "valueDate": "2026-06-14",
+      "chqRefNo": "REF700095",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4058.61,
+      "closingBalance": 125277.53
+    },
+    {
+      "txnDate": "2026-06-15",
+      "valueDate": "2026-06-15",
+      "chqRefNo": "REF700096",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2042.34,
+      "closingBalance": 123026.99
+    },
+    {
+      "txnDate": "2026-06-15",
+      "valueDate": "2026-06-15",
+      "chqRefNo": "REF700097",
+      "narration": "Payment received - sale invoice - Om Sai Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4258.09,
+      "closingBalance": 109552.52
+    },
+    {
+      "txnDate": "2026-06-15",
+      "valueDate": "2026-06-15",
+      "chqRefNo": "REF700098",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2421.47,
+      "closingBalance": 111973.99
+    },
+    {
+      "txnDate": "2026-06-15",
+      "valueDate": "2026-06-15",
+      "chqRefNo": "REF700099",
+      "narration": "Payment received - sale invoice - Vijay Hardware - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2921.76,
+      "closingBalance": 115495.79
+    },
+    {
+      "txnDate": "2026-06-15",
+      "valueDate": "2026-06-15",
+      "chqRefNo": "REF700100",
+      "narration": "Payment for stock purchase - Polycab Wires Distributor - UPI",
+      "withdrawalAmt": 18683.44,
+      "depositAmt": 0.0,
+      "closingBalance": 104343.55
+    },
+    {
+      "txnDate": "2026-06-15",
+      "valueDate": "2026-06-15",
+      "chqRefNo": "REF700101",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 600.04,
+      "closingBalance": 112574.03
+    },
+    {
+      "txnDate": "2026-06-15",
+      "valueDate": "2026-06-15",
+      "chqRefNo": "REF700102",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5488.86,
+      "closingBalance": 120984.65
+    },
+    {
+      "txnDate": "2026-06-16",
+      "valueDate": "2026-06-16",
+      "chqRefNo": "REF700103",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2594.81,
+      "closingBalance": 116870.49
+    },
+    {
+      "txnDate": "2026-06-16",
+      "valueDate": "2026-06-16",
+      "chqRefNo": "REF700104",
+      "narration": "Payment for stock purchase - Finolex Cables Agency - UPI",
+      "withdrawalAmt": 13313.12,
+      "depositAmt": 0.0,
+      "closingBalance": 112434.79
+    },
+    {
+      "txnDate": "2026-06-16",
+      "valueDate": "2026-06-16",
+      "chqRefNo": "REF700105",
+      "narration": "Payment received - sale invoice - Rahul Kirana - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6069.42,
+      "closingBalance": 114275.68
+    },
+    {
+      "txnDate": "2026-06-16",
+      "valueDate": "2026-06-16",
+      "chqRefNo": "REF700106",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2756.45,
+      "closingBalance": 108206.26
+    },
+    {
+      "txnDate": "2026-06-16",
+      "valueDate": "2026-06-16",
+      "chqRefNo": "REF700107",
+      "narration": "Payment received - sale invoice - Vijay Hardware - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1895.67,
+      "closingBalance": 118766.16
+    },
+    {
+      "txnDate": "2026-06-16",
+      "valueDate": "2026-06-16",
+      "chqRefNo": "REF700108",
+      "narration": "Payment received - sale invoice - Om Sai Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 3795.12,
+      "closingBalance": 125747.91
+    },
+    {
+      "txnDate": "2026-06-16",
+      "valueDate": "2026-06-16",
+      "chqRefNo": "REF700109",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1106.26,
+      "closingBalance": 105449.81
+    },
+    {
+      "txnDate": "2026-06-16",
+      "valueDate": "2026-06-16",
+      "chqRefNo": "REF700110",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 3186.63,
+      "closingBalance": 121952.79
+    },
+    {
+      "txnDate": "2026-06-17",
+      "valueDate": "2026-06-17",
+      "chqRefNo": "REF700111",
+      "narration": "Payment for stock purchase - Anchor Electricals Supplier - UPI",
+      "withdrawalAmt": 13658.03,
+      "depositAmt": 0.0,
+      "closingBalance": 113318.89
+    },
+    {
+      "txnDate": "2026-06-17",
+      "valueDate": "2026-06-17",
+      "chqRefNo": "REF700112",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2668.42,
+      "closingBalance": 122987.07
+    },
+    {
+      "txnDate": "2026-06-17",
+      "valueDate": "2026-06-17",
+      "chqRefNo": "REF700113",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 751.5,
+      "closingBalance": 113186.29
+    },
+    {
+      "txnDate": "2026-06-17",
+      "valueDate": "2026-06-17",
+      "chqRefNo": "REF700114",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7132.36,
+      "closingBalance": 120318.65
+    },
+    {
+      "txnDate": "2026-06-17",
+      "valueDate": "2026-06-17",
+      "chqRefNo": "REF700115",
+      "narration": "Owner drawings / cash withdrawal - Self - CASH-WITHDRAWAL",
+      "withdrawalAmt": 2165.93,
+      "depositAmt": 0.0,
+      "closingBalance": 111152.96
+    },
+    {
+      "txnDate": "2026-06-17",
+      "valueDate": "2026-06-17",
+      "chqRefNo": "REF700116",
+      "narration": "Payment received - sale invoice - Mahesh Plumbing Works - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 3989.85,
+      "closingBalance": 126976.92
+    },
+    {
+      "txnDate": "2026-06-18",
+      "valueDate": "2026-06-18",
+      "chqRefNo": "REF700117",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6085.15,
+      "closingBalance": 123571.84
+    },
+    {
+      "txnDate": "2026-06-18",
+      "valueDate": "2026-06-18",
+      "chqRefNo": "REF700118",
+      "narration": "Payment for stock purchase - Havells India Ltd (Distributor) - UPI",
+      "withdrawalAmt": 6330.8,
+      "depositAmt": 0.0,
+      "closingBalance": 117241.04
+    },
+    {
+      "txnDate": "2026-06-18",
+      "valueDate": "2026-06-18",
+      "chqRefNo": "REF700119",
+      "narration": "Payment received - sale invoice - Patel Construction - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 206.75,
+      "closingBalance": 115743.68
+    },
+    {
+      "txnDate": "2026-06-18",
+      "valueDate": "2026-06-18",
+      "chqRefNo": "REF700120",
+      "narration": "Payment received - sale invoice - Rahul Kirana - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 3088.5,
+      "closingBalance": 114241.46
+    },
+    {
+      "txnDate": "2026-06-18",
+      "valueDate": "2026-06-18",
+      "chqRefNo": "REF700121",
+      "narration": "Payment received - sale invoice - Balaji Fittings - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1743.01,
+      "closingBalance": 117486.69
+    },
+    {
+      "txnDate": "2026-06-18",
+      "valueDate": "2026-06-18",
+      "chqRefNo": "REF700122",
+      "narration": "Payment received - sale invoice - Om Sai Electricals - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1295.47,
+      "closingBalance": 115536.93
+    },
+    {
+      "txnDate": "2026-06-19",
+      "valueDate": "2026-06-19",
+      "chqRefNo": "REF700123",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 3549.56,
+      "closingBalance": 131929.01
+    },
+    {
+      "txnDate": "2026-06-19",
+      "valueDate": "2026-06-19",
+      "chqRefNo": "REF700124",
+      "narration": "Payment for stock purchase - Local Hardware Wholesaler - UPI",
+      "withdrawalAmt": 15873.59,
+      "depositAmt": 0.0,
+      "closingBalance": 136750.97
+    },
+    {
+      "txnDate": "2026-06-19",
+      "valueDate": "2026-06-19",
+      "chqRefNo": "REF700125",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 8679.41,
+      "closingBalance": 128379.45
+    },
+    {
+      "txnDate": "2026-06-19",
+      "valueDate": "2026-06-19",
+      "chqRefNo": "REF700126",
+      "narration": "Advance for bulk hardware supply - Rajput Contractors - NEFT",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 20215.74,
+      "closingBalance": 152624.56
+    },
+    {
+      "txnDate": "2026-06-19",
+      "valueDate": "2026-06-19",
+      "chqRefNo": "REF700127",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 479.81,
+      "closingBalance": 132408.82
+    },
+    {
+      "txnDate": "2026-06-19",
+      "valueDate": "2026-06-19",
+      "chqRefNo": "REF700128",
+      "narration": "Payment received - sale invoice - Vijay Hardware - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2459.0,
+      "closingBalance": 119700.04
+    },
+    {
+      "txnDate": "2026-06-20",
+      "valueDate": "2026-06-20",
+      "chqRefNo": "REF700129",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 966.67,
+      "closingBalance": 138110.67
+    },
+    {
+      "txnDate": "2026-06-20",
+      "valueDate": "2026-06-20",
+      "chqRefNo": "REF700130",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6303.91,
+      "closingBalance": 150742.08
+    },
+    {
+      "txnDate": "2026-06-20",
+      "valueDate": "2026-06-20",
+      "chqRefNo": "REF700131",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1500.33,
+      "closingBalance": 143423.37
+    },
+    {
+      "txnDate": "2026-06-20",
+      "valueDate": "2026-06-20",
+      "chqRefNo": "REF700132",
+      "narration": "GST liability payment - May return - GSTN - GST Payment - NEFT",
+      "withdrawalAmt": 11400.0,
+      "depositAmt": 0.0,
+      "closingBalance": 277305.95
+    },
+    {
+      "txnDate": "2026-06-20",
+      "valueDate": "2026-06-20",
+      "chqRefNo": "REF700133",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2895.73,
+      "closingBalance": 141006.4
+    },
+    {
+      "txnDate": "2026-06-20",
+      "valueDate": "2026-06-20",
+      "chqRefNo": "REF700134",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 393.03,
+      "closingBalance": 137144.0
+    },
+    {
+      "txnDate": "2026-06-20",
+      "valueDate": "2026-06-20",
+      "chqRefNo": "REF700135",
+      "narration": "Payment received - sale invoice - Balaji Fittings - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1014.8,
+      "closingBalance": 144438.17
+    },
+    {
+      "txnDate": "2026-06-20",
+      "valueDate": "2026-06-20",
+      "chqRefNo": "REF700136",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 916.64,
+      "closingBalance": 141923.04
+    },
+    {
+      "txnDate": "2026-06-21",
+      "valueDate": "2026-06-21",
+      "chqRefNo": "REF700137",
+      "narration": "Payment received - sale invoice - Anita Enterprises - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6408.45,
+      "closingBalance": 157150.53
+    },
+    {
+      "txnDate": "2026-06-21",
+      "valueDate": "2026-06-21",
+      "chqRefNo": "REF700138",
+      "narration": "Owner drawings / cash withdrawal - Self - CASH-WITHDRAWAL",
+      "withdrawalAmt": 2794.67,
+      "depositAmt": 0.0,
+      "closingBalance": 154355.86
+    },
+    {
+      "txnDate": "2026-06-22",
+      "valueDate": "2026-06-22",
+      "chqRefNo": "REF700139",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2378.97,
+      "closingBalance": 156734.83
+    },
+    {
+      "txnDate": "2026-06-22",
+      "valueDate": "2026-06-22",
+      "chqRefNo": "REF700140",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5406.77,
+      "closingBalance": 173181.13
+    },
+    {
+      "txnDate": "2026-06-22",
+      "valueDate": "2026-06-22",
+      "chqRefNo": "REF700141",
+      "narration": "Payment received - sale invoice - Om Sai Electricals - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5864.86,
+      "closingBalance": 167774.36
+    },
+    {
+      "txnDate": "2026-06-22",
+      "valueDate": "2026-06-22",
+      "chqRefNo": "REF700142",
+      "narration": "Payment for stock purchase - Havells India Ltd (Distributor) - UPI",
+      "withdrawalAmt": 9443.29,
+      "depositAmt": 0.0,
+      "closingBalance": 163737.84
+    },
+    {
+      "txnDate": "2026-06-22",
+      "valueDate": "2026-06-22",
+      "chqRefNo": "REF700143",
+      "narration": "Payment received - sale invoice - Patel Construction - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5174.67,
+      "closingBalance": 161909.5
+    },
+    {
+      "txnDate": "2026-06-23",
+      "valueDate": "2026-06-23",
+      "chqRefNo": "REF700144",
+      "narration": "Payment received - sale invoice - Om Sai Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7015.21,
+      "closingBalance": 176195.97
+    },
+    {
+      "txnDate": "2026-06-23",
+      "valueDate": "2026-06-23",
+      "chqRefNo": "REF700145",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2152.05,
+      "closingBalance": 178348.02
+    },
+    {
+      "txnDate": "2026-06-23",
+      "valueDate": "2026-06-23",
+      "chqRefNo": "REF700146",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5859.05,
+      "closingBalance": 184207.07
+    },
+    {
+      "txnDate": "2026-06-23",
+      "valueDate": "2026-06-23",
+      "chqRefNo": "REF700147",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 3028.56,
+      "closingBalance": 188230.91
+    },
+    {
+      "txnDate": "2026-06-23",
+      "valueDate": "2026-06-23",
+      "chqRefNo": "REF700148",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 995.28,
+      "closingBalance": 185202.35
+    },
+    {
+      "txnDate": "2026-06-23",
+      "valueDate": "2026-06-23",
+      "chqRefNo": "REF700149",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1190.96,
+      "closingBalance": 164928.8
+    },
+    {
+      "txnDate": "2026-06-23",
+      "valueDate": "2026-06-23",
+      "chqRefNo": "REF700150",
+      "narration": "Payment received - sale invoice - Rahul Kirana - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4251.96,
+      "closingBalance": 169180.76
+    },
+    {
+      "txnDate": "2026-06-24",
+      "valueDate": "2026-06-24",
+      "chqRefNo": "REF700151",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 777.8,
+      "closingBalance": 190882.08
+    },
+    {
+      "txnDate": "2026-06-24",
+      "valueDate": "2026-06-24",
+      "chqRefNo": "REF700152",
+      "narration": "Payment received - sale invoice - Om Sai Electricals - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 547.94,
+      "closingBalance": 193740.83
+    },
+    {
+      "txnDate": "2026-06-24",
+      "valueDate": "2026-06-24",
+      "chqRefNo": "REF700153",
+      "narration": "Payment received - sale invoice - Anita Enterprises - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 3544.42,
+      "closingBalance": 197285.25
+    },
+    {
+      "txnDate": "2026-06-24",
+      "valueDate": "2026-06-24",
+      "chqRefNo": "REF700154",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 945.34,
+      "closingBalance": 189176.25
+    },
+    {
+      "txnDate": "2026-06-24",
+      "valueDate": "2026-06-24",
+      "chqRefNo": "REF700155",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 928.03,
+      "closingBalance": 190104.28
+    },
+    {
+      "txnDate": "2026-06-24",
+      "valueDate": "2026-06-24",
+      "chqRefNo": "REF700156",
+      "narration": "Payment received - sale invoice - Vijay Hardware - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2310.81,
+      "closingBalance": 193192.89
+    },
+    {
+      "txnDate": "2026-06-25",
+      "valueDate": "2026-06-25",
+      "chqRefNo": "REF700157",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 349.47,
+      "closingBalance": 204521.67
+    },
+    {
+      "txnDate": "2026-06-25",
+      "valueDate": "2026-06-25",
+      "chqRefNo": "REF700158",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 704.34,
+      "closingBalance": 220896.65
+    },
+    {
+      "txnDate": "2026-06-25",
+      "valueDate": "2026-06-25",
+      "chqRefNo": "REF700159",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5998.73,
+      "closingBalance": 204172.2
+    },
+    {
+      "txnDate": "2026-06-25",
+      "valueDate": "2026-06-25",
+      "chqRefNo": "REF700160",
+      "narration": "Payment received - sale invoice - Vijay Hardware - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6128.7,
+      "closingBalance": 217647.97
+    },
+    {
+      "txnDate": "2026-06-25",
+      "valueDate": "2026-06-25",
+      "chqRefNo": "REF700161",
+      "narration": "Payment received - sale invoice - Mahesh Plumbing Works - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2320.96,
+      "closingBalance": 220192.31
+    },
+    {
+      "txnDate": "2026-06-25",
+      "valueDate": "2026-06-25",
+      "chqRefNo": "REF700162",
+      "narration": "Payment received - sale invoice - Vijay Hardware - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 223.38,
+      "closingBalance": 217871.35
+    },
+    {
+      "txnDate": "2026-06-25",
+      "valueDate": "2026-06-25",
+      "chqRefNo": "REF700163",
+      "narration": "Payment received - sale invoice - Mahesh Plumbing Works - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 888.22,
+      "closingBalance": 198173.47
+    },
+    {
+      "txnDate": "2026-06-25",
+      "valueDate": "2026-06-25",
+      "chqRefNo": "REF700164",
+      "narration": "Payment for stock purchase - Finolex Cables Agency - UPI",
+      "withdrawalAmt": 6759.71,
+      "depositAmt": 0.0,
+      "closingBalance": 214136.94
+    },
+    {
+      "txnDate": "2026-06-25",
+      "valueDate": "2026-06-25",
+      "chqRefNo": "REF700165",
+      "narration": "Owner drawings / cash withdrawal - Self - CASH-WITHDRAWAL",
+      "withdrawalAmt": 3958.24,
+      "depositAmt": 0.0,
+      "closingBalance": 210178.7
+    },
+    {
+      "txnDate": "2026-06-25",
+      "valueDate": "2026-06-25",
+      "chqRefNo": "REF700166",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6997.6,
+      "closingBalance": 211519.27
+    },
+    {
+      "txnDate": "2026-06-26",
+      "valueDate": "2026-06-26",
+      "chqRefNo": "REF700167",
+      "narration": "Payment received - sale invoice - Mahesh Plumbing Works - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7070.62,
+      "closingBalance": 217249.32
+    },
+    {
+      "txnDate": "2026-06-26",
+      "valueDate": "2026-06-26",
+      "chqRefNo": "REF700168",
+      "narration": "Payment received - sale invoice - Rahul Kirana - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6400.54,
+      "closingBalance": 234533.98
+    },
+    {
+      "txnDate": "2026-06-26",
+      "valueDate": "2026-06-26",
+      "chqRefNo": "REF700169",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6017.33,
+      "closingBalance": 240551.31
+    },
+    {
+      "txnDate": "2026-06-26",
+      "valueDate": "2026-06-26",
+      "chqRefNo": "REF700170",
+      "narration": "Advance for bulk hardware supply - Deshmukh Builders - NEFT",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 19848.69,
+      "closingBalance": 260400.0
+    },
+    {
+      "txnDate": "2026-06-26",
+      "valueDate": "2026-06-26",
+      "chqRefNo": "REF700171",
+      "narration": "Payment received - sale invoice - Vijay Hardware - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2909.24,
+      "closingBalance": 228133.44
+    },
+    {
+      "txnDate": "2026-06-26",
+      "valueDate": "2026-06-26",
+      "chqRefNo": "REF700172",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7974.88,
+      "closingBalance": 225224.2
+    },
+    {
+      "txnDate": "2026-06-27",
+      "valueDate": "2026-06-27",
+      "chqRefNo": "REF700173",
+      "narration": "Payment received - sale invoice - Patel Construction - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 346.2,
+      "closingBalance": 272074.33
+    },
+    {
+      "txnDate": "2026-06-27",
+      "valueDate": "2026-06-27",
+      "chqRefNo": "REF700174",
+      "narration": "Payment for stock purchase - Local Hardware Wholesaler - UPI",
+      "withdrawalAmt": 6473.1,
+      "depositAmt": 0.0,
+      "closingBalance": 272797.42
+    },
+    {
+      "txnDate": "2026-06-27",
+      "valueDate": "2026-06-27",
+      "chqRefNo": "REF700175",
+      "narration": "Payment received - sale invoice - Balaji Fittings - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2963.37,
+      "closingBalance": 271728.13
+    },
+    {
+      "txnDate": "2026-06-27",
+      "valueDate": "2026-06-27",
+      "chqRefNo": "REF700176",
+      "narration": "Payment received - sale invoice - Patel Construction - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 8364.76,
+      "closingBalance": 268764.76
+    },
+    {
+      "txnDate": "2026-06-27",
+      "valueDate": "2026-06-27",
+      "chqRefNo": "REF700177",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7196.19,
+      "closingBalance": 279270.52
+    },
+    {
+      "txnDate": "2026-06-28",
+      "valueDate": "2026-06-28",
+      "chqRefNo": "REF700178",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 2219.48,
+      "closingBalance": 275016.9
+    },
+    {
+      "txnDate": "2026-06-28",
+      "valueDate": "2026-06-28",
+      "chqRefNo": "REF700179",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5518.69,
+      "closingBalance": 280535.59
+    },
+    {
+      "txnDate": "2026-06-29",
+      "valueDate": "2026-06-29",
+      "chqRefNo": "REF700180",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1137.16,
+      "closingBalance": 297660.91
+    },
+    {
+      "txnDate": "2026-06-29",
+      "valueDate": "2026-06-29",
+      "chqRefNo": "REF700181",
+      "narration": "Payment received - sale invoice - Vijay Hardware - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 385.66,
+      "closingBalance": 298046.57
+    },
+    {
+      "txnDate": "2026-06-29",
+      "valueDate": "2026-06-29",
+      "chqRefNo": "REF700182",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 333.73,
+      "closingBalance": 280869.32
+    },
+    {
+      "txnDate": "2026-06-29",
+      "valueDate": "2026-06-29",
+      "chqRefNo": "REF700183",
+      "narration": "Payment received - sale invoice - Suresh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7191.05,
+      "closingBalance": 288060.37
+    },
+    {
+      "txnDate": "2026-06-29",
+      "valueDate": "2026-06-29",
+      "chqRefNo": "REF700184",
+      "narration": "Payment received - sale invoice - Shree Ganesh Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 4242.45,
+      "closingBalance": 309502.49
+    },
+    {
+      "txnDate": "2026-06-29",
+      "valueDate": "2026-06-29",
+      "chqRefNo": "REF700185",
+      "narration": "Payment received - sale invoice - City Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7213.47,
+      "closingBalance": 305260.04
+    },
+    {
+      "txnDate": "2026-06-29",
+      "valueDate": "2026-06-29",
+      "chqRefNo": "REF700186",
+      "narration": "Payment received - sale invoice - Om Sai Electricals - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 6326.33,
+      "closingBalance": 315828.82
+    },
+    {
+      "txnDate": "2026-06-29",
+      "valueDate": "2026-06-29",
+      "chqRefNo": "REF700187",
+      "narration": "Owner drawings / cash withdrawal - Self - CASH-WITHDRAWAL",
+      "withdrawalAmt": 2784.28,
+      "depositAmt": 0.0,
+      "closingBalance": 313044.54
+    },
+    {
+      "txnDate": "2026-06-29",
+      "valueDate": "2026-06-29",
+      "chqRefNo": "REF700188",
+      "narration": "Payment received - sale invoice - Balaji Fittings - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 8463.38,
+      "closingBalance": 296523.75
+    },
+    {
+      "txnDate": "2026-06-30",
+      "valueDate": "2026-06-30",
+      "chqRefNo": "REF700189",
+      "narration": "Payment received - sale invoice - Mahesh Plumbing Works - IMPS",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 5943.54,
+      "closingBalance": 331705.95
+    },
+    {
+      "txnDate": "2026-06-30",
+      "valueDate": "2026-06-30",
+      "chqRefNo": "REF700190",
+      "narration": "Payment received - sale invoice - Anita Enterprises - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 7942.25,
+      "closingBalance": 324682.36
+    },
+    {
+      "txnDate": "2026-06-30",
+      "valueDate": "2026-06-30",
+      "chqRefNo": "REF700191",
+      "narration": "Payment received - sale invoice - Sanjay Bhosale - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 3695.57,
+      "closingBalance": 316740.11
+    },
+    {
+      "txnDate": "2026-06-30",
+      "valueDate": "2026-06-30",
+      "chqRefNo": "REF700192",
+      "narration": "Payment received - sale invoice - Priya Traders - UPI",
+      "withdrawalAmt": 0.0,
+      "depositAmt": 1080.05,
+      "closingBalance": 325762.41
+    }
+  ]
+}
+

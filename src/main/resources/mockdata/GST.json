@@ -1,0 +1,122 @@
+{
+  "gstin": "27ABCPP1234K1Z5",
+  "msmeId": "3a622814-ac59-4bdc-81ff-ef53cc81087d",
+  "legalName": "RAMESH KUMAR PATIL",
+  "tradeName": "Krishna Hardware & Electricals",
+  "constitutionOfBusiness": "Proprietorship",
+  "registrationDate": "2019-04-12",
+  "taxpayerType": "Regular",
+  "gstStatus": "Active",
+  "principalPlaceOfBusiness": {
+    "address": "Shop No. 14, Ashok Stambh Road, Nashik",
+    "state": "Maharashtra",
+    "pincode": "422002"
+  },
+  "natureOfBusiness": [
+    "Wholesale Business",
+    "Retail Business"
+  ],
+  "filingFrequency": "Monthly",
+  "aggregateAnnualTurnover": 6983904.28,
+  "returnFilingHistory": [
+    {
+      "returnPeriod": "012026",
+      "returnType": "GSTR-3B",
+      "dueDate": "0120-26-20",
+      "filingDate": "0120-26-15",
+      "filingStatus": "Filed (On Time)",
+      "delayDays": 0,
+      "taxableTurnover": 537360.31,
+      "totalTaxLiability": 96724.86,
+      "taxPaidCash": 33853.7,
+      "taxPaidITC": 62871.16,
+      "lateFee": 0.0
+    },
+    {
+      "returnPeriod": "022026",
+      "returnType": "GSTR-3B",
+      "dueDate": "0220-26-20",
+      "filingDate": "0220-26-27",
+      "filingStatus": "Filed (Late)",
+      "delayDays": 7,
+      "taxableTurnover": 533767.05,
+      "totalTaxLiability": 96078.07,
+      "taxPaidCash": 33627.32,
+      "taxPaidITC": 62450.75,
+      "lateFee": 500.0
+    },
+    {
+      "returnPeriod": "032026",
+      "returnType": "GSTR-3B",
+      "dueDate": "0320-26-20",
+      "filingDate": "0320-26-17",
+      "filingStatus": "Filed (On Time)",
+      "delayDays": 0,
+      "taxableTurnover": 554896.65,
+      "totalTaxLiability": 99881.4,
+      "taxPaidCash": 34958.49,
+      "taxPaidITC": 64922.91,
+      "lateFee": 0.0
+    },
+    {
+      "returnPeriod": "042026",
+      "returnType": "GSTR-3B",
+      "dueDate": "0420-26-20",
+      "filingDate": "0420-26-20",
+      "filingStatus": "Filed (On Time)",
+      "delayDays": 0,
+      "taxableTurnover": 625729.88,
+      "totalTaxLiability": 112631.38,
+      "taxPaidCash": 39420.98,
+      "taxPaidITC": 73210.4,
+      "lateFee": 0.0
+    },
+    {
+      "returnPeriod": "052026",
+      "returnType": "GSTR-3B",
+      "dueDate": "0520-26-20",
+      "filingDate": "0520-26-19",
+      "filingStatus": "Filed (On Time)",
+      "delayDays": 0,
+      "taxableTurnover": 631587.7,
+      "totalTaxLiability": 113685.79,
+      "taxPaidCash": 39790.03,
+      "taxPaidITC": 73895.76,
+      "lateFee": 0.0
+    },
+    {
+      "returnPeriod": "062026",
+      "returnType": "GSTR-3B",
+      "dueDate": "0620-26-20",
+      "filingDate": "0620-26-20",
+      "filingStatus": "Filed (On Time)",
+      "delayDays": 0,
+      "taxableTurnover": 608610.55,
+      "totalTaxLiability": 109549.9,
+      "taxPaidCash": 38342.46,
+      "taxPaidITC": 71207.43,
+      "lateFee": 0.0
+    }
+  ],
+  "currentPeriodSummary": {
+    "returnPeriod": "062026",
+    "grossTurnover": 608610.55,
+    "exemptSupply": 0.0,
+    "taxLiability": {
+      "cgst": 54774.95,
+      "sgst": 54774.95,
+      "igst": 0.0
+    },
+    "inputTaxCreditAvailed": 71207.43,
+    "netCashTaxPaid": 38342.46,
+    "filingStatus": "Filed (On Time)"
+  },
+  "complianceIndicators": {
+    "returnsFiledLast6Months": 6,
+    "returnsFiledOnTimeLast6Months": 5,
+    "onTimeFilingRate": 83.3,
+    "activeECommerceRegistration": false,
+    "eInvoicingApplicable": false
+  }
+}
+

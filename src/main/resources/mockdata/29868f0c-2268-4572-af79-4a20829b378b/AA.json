@@ -1,0 +1,20 @@
+{
+  "msmeId": "29868f0c-2268-4572-af79-4a20829b378b",
+  "Account": {
+    "Summary": {
+      "currentBalance": 5000
+    },
+    "Transactions": {
+      "Transaction": [
+        {
+          "type": "CREDIT",
+          "amount": 1000
+        },
+        {
+          "type": "DEBIT",
+          "amount": 5000
+        }
+      ]
+    }
+  }
+}

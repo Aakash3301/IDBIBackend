@@ -1,0 +1,122 @@
+{
+  "establishmentId": "MHNAS0123456000",
+  "msmeId": "3a622814-ac59-4bdc-81ff-ef53cc81087d",
+  "establishmentName": "Krishna Hardware & Electricals",
+  "employerName": "RAMESH KUMAR PATIL",
+  "coverageType": "Voluntary",
+  "coverageNote": "Below the 20-employee mandatory EPFO threshold; establishment opted for voluntary coverage",
+  "registrationDate": "2022-02-20",
+  "address": {
+    "line1": "Shop No. 14, Ashok Stambh Road, Nashik",
+    "state": "Maharashtra",
+    "pincode": "422002"
+  },
+  "currentWageMonth": "06-2026",
+  "currentMonthFiling": {
+    "wageMonth": "06-2026",
+    "filingStatus": "Filed",
+    "dueDate": "2026-06-15",
+    "filingDate": "2026-06-12",
+    "numberOfEmployees": 3,
+    "totalWages": 33500.0,
+    "totalRemitted": 8040.0
+  },
+  "employees": [
+    {
+      "uan": "100456789012",
+      "name": "Ganesh Wagh",
+      "designation": "Sales Helper",
+      "dateOfJoining": "2022-03-01",
+      "monthlyWage": 12000.0,
+      "employeeContribution": 1440.0,
+      "employerEPFContribution": 440.4,
+      "employerEPSContribution": 999.6,
+      "totalContribution": 2880.0
+    },
+    {
+      "uan": "100456789013",
+      "name": "Suresh More",
+      "designation": "Delivery Staff",
+      "dateOfJoining": "2023-07-15",
+      "monthlyWage": 11000.0,
+      "employeeContribution": 1320.0,
+      "employerEPFContribution": 403.7,
+      "employerEPSContribution": 916.3,
+      "totalContribution": 2640.0
+    },
+    {
+      "uan": "100456789014",
+      "name": "Vikas Jadhav",
+      "designation": "Store Assistant",
+      "dateOfJoining": "2024-11-10",
+      "monthlyWage": 10500.0,
+      "employeeContribution": 1260.0,
+      "employerEPFContribution": 385.35,
+      "employerEPSContribution": 874.65,
+      "totalContribution": 2520.0
+    }
+  ],
+  "filingHistory": [
+    {
+      "wageMonth": "01-2026",
+      "filingStatus": "Filed",
+      "dueDate": "2026-01-15",
+      "filingDate": "2026-01-12",
+      "numberOfEmployees": 3,
+      "totalWages": 33500.0,
+      "totalRemitted": 8040.0
+    },
+    {
+      "wageMonth": "02-2026",
+      "filingStatus": "Filed (Late)",
+      "dueDate": "2026-02-15",
+      "filingDate": "2026-02-22",
+      "numberOfEmployees": 3,
+      "totalWages": 33500.0,
+      "totalRemitted": 8040.0
+    },
+    {
+      "wageMonth": "03-2026",
+      "filingStatus": "Filed",
+      "dueDate": "2026-03-15",
+      "filingDate": "2026-03-12",
+      "numberOfEmployees": 3,
+      "totalWages": 33500.0,
+      "totalRemitted": 8040.0
+    },
+    {
+      "wageMonth": "04-2026",
+      "filingStatus": "Filed",
+      "dueDate": "2026-04-15",
+      "filingDate": "2026-04-12",
+      "numberOfEmployees": 3,
+      "totalWages": 33500.0,
+      "totalRemitted": 8040.0
+    },
+    {
+      "wageMonth": "05-2026",
+      "filingStatus": "Filed",
+      "dueDate": "2026-05-15",
+      "filingDate": "2026-05-12",
+      "numberOfEmployees": 3,
+      "totalWages": 33500.0,
+      "totalRemitted": 8040.0
+    },
+    {
+      "wageMonth": "06-2026",
+      "filingStatus": "Filed",
+      "dueDate": "2026-06-15",
+      "filingDate": "2026-06-12",
+      "numberOfEmployees": 3,
+      "totalWages": 33500.0,
+      "totalRemitted": 8040.0
+    }
+  ],
+  "complianceIndicators": {
+    "monthsFiledLast6": 6,
+    "monthsFiledOnTimeLast6": 5,
+    "onTimeFilingRate": 83.3,
+    "employeeAttritionLast6Months": 0
+  }
+}
+
